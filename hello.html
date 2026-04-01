@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevFest Paris 2026 | Dossier de Sponsoring</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+
+        :root {
+            --brand-primary: #4285F4;
+            --brand-red: #EA4335;
+            --brand-yellow: #FBBC04;
+            --brand-green: #34A853;
+            --bg-dark: #0B0F19;
+            --bg-darker: #050810;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-dark);
+            color: #E2E8F0;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        .font-display {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #3B82F6 0%, #FFFFFF 50%, #EF4444 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, rgba(66, 133, 244, 0.1) 0%, rgba(167, 139, 250, 0.1) 100%);
+        }
+
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px -15px rgba(66, 133, 244, 0.3);
+            border-color: rgba(66, 133, 244, 0.3);
+            background: rgba(30, 41, 59, 0.8);
+        }
+
+        /* Abstract Glows */
+        .glow-circle {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.5;
+            z-index: -1;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        .glow-primary {
+            background: var(--brand-primary);
+            width: 400px;
+            height: 400px;
+            top: -100px;
+            right: -100px;
+        }
+
+        .glow-red {
+            background: var(--brand-red);
+            width: 300px;
+            height: 300px;
+            bottom: -50px;
+            left: -100px;
+            animation-delay: -5s;
+        }
+
+        .glow-green {
+            background: var(--brand-green);
+            width: 350px;
+            height: 350px;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.2;
+            animation-delay: -10s;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0) scale(1);
+            }
+
+            50% {
+                transform: translateY(-30px) scale(1.05);
+            }
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1.5rem;
+        }
+
+        table.pricing-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin-top: 2rem;
+        }
+
+        .pricing-table th,
+        .pricing-table td {
+            padding: 1.25rem 1rem;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .pricing-table th {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .pricing-table td:first-child {
+            text-align: left;
+            font-weight: 500;
+            color: #cbd5e1;
+        }
+
+        .pricing-table tr:hover td {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .check-icon {
+            color: #34A853;
+            font-weight: bold;
+        }
+
+        .dash-icon {
+            color: #475569;
+        }
+
+        .tier-silver {
+            color: #94A3B8;
+        }
+
+        .tier-gold {
+            color: #FBBF24;
+        }
+
+        .tier-premium {
+            color: #A78BFA;
+        }
+
+        .tab-brand-border-silver {
+            border-top: 4px solid #94A3B8;
+        }
+
+        .tab-brand-border-gold {
+            border-top: 4px solid #FBBF24;
+        }
+
+        .tab-brand-border-premium {
+            border-top: 4px solid #A78BFA;
+            position: relative;
+        }
+
+        .tab-brand-border-premium::after {
+            content: 'Limité à 1';
+            position: absolute;
+            top: -12px;
+            right: 10px;
+            background: #A78BFA;
+            color: #000;
+            font-size: 0.6rem;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-weight: 800;
+        }
+    </style>
+</head>
+
+<body class="antialiased relative">
+
+    <!-- Ambient Background Lighting -->
+    <div class="glow-circle glow-primary"></div>
+    <div class="glow-circle glow-red"></div>
+    <div class="glow-circle glow-green"></div>
+
+    <!-- Header -->
+    <nav class="fixed w-full z-50 glass-panel border-b-0 border-white/5 top-0">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-4 group">
+                <img src="images/gdg-logo.svg" class="h-8 w-auto" alt="GDG Paris">
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-300">
+                <a href="#chiffres" class="hover:text-white transition-colors">Chiffres</a>
+                <a href="#event" class="hover:text-white transition-colors">L'Événement</a>
+                <a href="https://www.linkedin.com/company/gdg-paris" target="_blank"
+                    class="hover:text-white transition-colors">LinkedIn</a>
+                <a href="#lieu" class="hover:text-white transition-colors">Lieu</a>
+                <a href="#contact"
+                    class="bg-blue-600 text-white px-5 py-2.5 rounded-full hover:bg-blue-500 transition-all font-bold shadow-lg shadow-blue-500/20">Contactez-nous</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-40 pb-20 relative px-6 z-10">
+        <div class="max-w-7xl mx-auto flex flex-col items-center text-center">
+            <div
+                class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel text-blue-400 text-xs font-bold uppercase tracking-widest mb-8 border-blue-500/20">
+                <i data-lucide="calendar" class="w-4 h-4"></i> 27 Novembre 2026
+            </div>
+
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-display font-black tracking-tight mb-8 leading-tight">
+                Construisons <br />
+                <span class="gradient-text">DevFest Paris 2026.</span>
+            </h1>
+
+            <p class="text-xl md:text-2xl text-slate-400 font-light max-w-3xl mb-12 leading-relaxed">
+                La plus grande conférence technologique internationale portée par des communautés. Rejoignez-nous pour
+                la 7ème édition au cœur de Paris.
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#cfp"
+                    class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform flex items-center gap-2 shadow-lg shadow-blue-500/30">
+                    <i data-lucide="mic" class="w-5 h-5"></i> Proposer un talk
+                </a>
+                <a href="https://www.linkedin.com/company/gdg-paris" target="_blank"
+                    class="bg-white text-slate-900 px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform flex items-center gap-2">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                    </svg>
+                    Suivre LinkedIn
+                </a>
+                <a href="#lieu"
+                    class="glass-panel text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition-colors flex items-center gap-2">
+                    Découvrir le lieu <i data-lucide="map-pin" class="w-5 h-5 text-blue-400"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section moved below -->
+
+    <!-- DevFest Paris Metrics -->
+    <section id="event" class="py-20 px-6 relative z-10 border-t border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                <div>
+                    <span
+                        class="text-blue-400 font-bold uppercase tracking-widest text-sm mb-2 block">L'événement</span>
+                    <h2 class="text-4xl md:text-5xl font-display font-black">DevFest Paris 2026</h2>
+                </div>
+                <p class="text-slate-400 max-w-md text-right md:text-left">
+                    Une journée dédiée à la tech, 100% indépendante et à but non lucratif. Tous les bénéfices sont
+                    réinvestis dans la communauté.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="glass-panel p-8 rounded-3xl card-hover border-white/5 flex flex-col justify-between">
+                    <div>
+                        <div
+                            class="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-400 mb-6">
+                            <i data-lucide="users" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-5xl font-display font-black mb-2">450</h3>
+                        <p class="text-lg font-bold text-white mb-1">Participants</p>
+                        <p class="text-sm text-slate-400">Développeurs & décideurs</p>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-8 rounded-3xl card-hover border-white/5 flex flex-col justify-between">
+                    <div>
+                        <div
+                            class="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center text-purple-400 mb-6">
+                            <i data-lucide="layers" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-5xl font-display font-black mb-2">5</h3>
+                        <p class="text-lg font-bold text-white mb-1">Tracks</p>
+                        <p class="text-sm text-slate-400">Conférences, Workshops & Quick talks</p>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-8 rounded-3xl card-hover border-white/5 flex flex-col justify-between">
+                    <div>
+                        <div
+                            class="w-12 h-12 rounded-xl bg-yellow-500/20 flex items-center justify-center text-yellow-400 mb-6">
+                            <i data-lucide="award" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-5xl font-display font-black mb-2">15+</h3>
+                        <p class="text-lg font-bold text-white mb-1">Sponsors</p>
+                        <p class="text-sm text-slate-400">Entreprises innovantes engagées</p>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-8 rounded-3xl card-hover border-white/5 flex flex-col justify-between">
+                    <div>
+                        <div
+                            class="w-12 h-12 rounded-xl bg-green-500/20 flex items-center justify-center text-green-400 mb-6">
+                            <i data-lucide="history" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-5xl font-display font-black mb-2">6</h3>
+                        <p class="text-lg font-bold text-white mb-1">Éditions</p>
+                        <p class="text-sm text-slate-400">2.2K+ Participants & 35+ Sponsors</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pourquoi Devenir Sponsor -->
+    <section class="py-20 px-6 relative z-10 bg-black/30">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-display font-black mb-16 text-center">Pourquoi devenir Sponsor ?</h2>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div
+                    class="glass-panel p-8 rounded-3xl border-white/5 flex gap-6 items-start hover:bg-white/5 transition-colors">
+                    <div
+                        class="w-16 h-16 shrink-0 rounded-2xl bg-blue-500/20 flex items-center justify-center text-blue-400">
+                        <i data-lucide="network" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-3 text-white">Networking</h3>
+                        <p class="text-slate-400 leading-relaxed">Échangez avec plus de 30 experts locaux &
+                            internationaux lors des sessions techniques et pendant le dîner VIP.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="glass-panel p-8 rounded-3xl border-white/5 flex gap-6 items-start hover:bg-white/5 transition-colors">
+                    <div
+                        class="w-16 h-16 shrink-0 rounded-2xl bg-purple-500/20 flex items-center justify-center text-purple-400">
+                        <i data-lucide="megaphone" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-3 text-white">Visibilité & Rayonnement</h3>
+                        <p class="text-slate-400 leading-relaxed">Positionnez votre entreprise comme un acteur de
+                            l'innovation. Profitez d'une exposition maximale pour notre 15ème anniversaire.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="glass-panel p-8 rounded-3xl border-white/5 flex gap-6 items-start hover:bg-white/5 transition-colors">
+                    <div
+                        class="w-16 h-16 shrink-0 rounded-2xl bg-yellow-500/20 flex items-center justify-center text-yellow-400">
+                        <i data-lucide="user-plus" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-3 text-white">Recrutement de Talents</h3>
+                        <p class="text-slate-400 leading-relaxed">Accédez à un vivier qualifié de plus de 450 profils,
+                            des étudiants aux seniors, renforçant votre marque employeur.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="glass-panel p-8 rounded-3xl border-white/5 flex gap-6 items-start hover:bg-white/5 transition-colors">
+                    <div
+                        class="w-16 h-16 shrink-0 rounded-2xl bg-green-500/20 flex items-center justify-center text-green-400">
+                        <i data-lucide="trending-up" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-3 text-white">Montée en compétences</h3>
+                        <p class="text-slate-400 leading-relaxed">Permettez à vos équipes de découvrir les sujets tech
+                            actuels et futurs avec des professionnels du secteur.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CFP Section -->
+    <section id="cfp" class="py-24 px-6 relative z-10 bg-black/30">
+        <div class="max-w-6xl mx-auto">
+            <!-- CFP Announcement Banner -->
+            <div
+                class="glass-panel rounded-3xl p-8 md:p-12 border border-blue-500/20 mb-16 text-center relative overflow-hidden">
+                <div
+                    class="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-purple-600/5 to-transparent pointer-events-none">
+                </div>
+                <div class="relative z-10">
+                    <div
+                        class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/20 text-green-400 text-xs font-bold uppercase tracking-widest mb-6 border border-green-500/30">
+                        <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse inline-block"></span>
+                        CFP Ouvert
+                    </div>
+                    <h2 class="text-4xl md:text-6xl font-display font-black mb-4">
+                        𝐋𝐞 𝐂𝐅𝐏 𝐞𝐬𝐭 𝐨𝐟𝐟𝐢𝐜𝐢𝐞𝐥𝐥𝐞𝐦𝐞𝐧𝐭 <span class="text-green-400">𝐎𝐔𝐕𝐄𝐑𝐓</span>
+                        🥳
+                    </h2>
+                    <p class="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto mb-4 leading-relaxed">
+                        On attend vos sujets, vos talks, vos démos, vos histoires.
+                    </p>
+                    <div
+                        class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full glass-panel text-yellow-400 font-bold text-sm border border-yellow-500/30">
+                        <i data-lucide="calendar" class="w-4 h-4"></i>
+                        Soumettez votre talk dès maintenant et jusqu'au <strong>30 juin</strong>
+                    </div>
+                    <div class="mt-8">
+                        <a href="https://conference-hall.io" target="_blank"
+                            class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-full font-bold text-lg transition-all hover:scale-105 shadow-lg shadow-blue-500/30">
+                            Soumettre mon talk <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formats & Categories -->
+            <div class="grid lg:grid-cols-2 gap-12">
+
+                <!-- Talk Formats -->
+                <div>
+                    <span class="text-blue-400 font-bold uppercase tracking-widest text-sm mb-3 block">Formats</span>
+                    <h3 class="text-3xl font-display font-black mb-8">Types de sessions</h3>
+
+                    <div class="space-y-5">
+                        <!-- Conference -->
+                        <div
+                            class="glass-panel p-6 rounded-2xl border-white/5 hover:border-blue-500/20 transition-colors group">
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-12 h-12 shrink-0 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-400 group-hover:bg-blue-500/30 transition-colors">
+                                    <i data-lucide="presentation" class="w-6 h-6"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <h4 class="text-lg font-bold text-white">Conference</h4>
+                                        <span
+                                            class="bg-blue-600/20 text-blue-400 px-2.5 py-0.5 rounded-full text-xs font-bold">45
+                                            min</span>
+                                    </div>
+                                    <p class="text-slate-400 text-sm mb-1">🇫🇷 Il peut s'agir de live coding, de
+                                        diapositives ou des deux. 50 minutes, questions-réponses incluses.</p>
+                                    <p class="text-slate-500 text-sm">🇬🇧 It could be a live code, slides, or both.
+                                        50min including Q&A</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Lunch Talk -->
+                        <div
+                            class="glass-panel p-6 rounded-2xl border-white/5 hover:border-yellow-500/20 transition-colors group">
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-12 h-12 shrink-0 rounded-xl bg-yellow-500/20 flex items-center justify-center text-yellow-400 group-hover:bg-yellow-500/30 transition-colors">
+                                    <i data-lucide="sandwich" class="w-6 h-6"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <h4 class="text-lg font-bold text-white">Lunch Talk</h4>
+                                        <span
+                                            class="bg-yellow-600/20 text-yellow-400 px-2.5 py-0.5 rounded-full text-xs font-bold">20
+                                            min</span>
+                                    </div>
+                                    <p class="text-slate-400 text-sm mb-1">🇫🇷 Une présentation courte. 20 minutes,
+                                        questions-réponses incluses.</p>
+                                    <p class="text-slate-500 text-sm">🇬🇧 A short talk. 20min including Q&A</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Workshop -->
+                        <div
+                            class="glass-panel p-6 rounded-2xl border-white/5 hover:border-green-500/20 transition-colors group">
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-12 h-12 shrink-0 rounded-xl bg-green-500/20 flex items-center justify-center text-green-400 group-hover:bg-green-500/30 transition-colors">
+                                    <i data-lucide="code-2" class="w-6 h-6"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <h4 class="text-lg font-bold text-white">Workshop</h4>
+                                        <span
+                                            class="bg-green-600/20 text-green-400 px-2.5 py-0.5 rounded-full text-xs font-bold">1h30</span>
+                                    </div>
+                                    <p class="text-slate-400 text-sm mb-1">🇫🇷 Pratique ! Codons ensemble. Atelier de
+                                        120 minutes.</p>
+                                    <p class="text-slate-500 text-sm">🇬🇧 Hand's On! Let's code. 120min workshop</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categories -->
+                <div>
+                    <span class="text-blue-400 font-bold uppercase tracking-widest text-sm mb-3 block">Catégories</span>
+                    <h3 class="text-3xl font-display font-black mb-8">Thèmes acceptés</h3>
+
+                    <div class="grid grid-cols-1 gap-3">
+                        <div
+                            class="glass-panel px-5 py-4 rounded-xl border-white/5 hover:border-blue-500/20 transition-colors flex items-center gap-3">
+                            <span class="text-2xl">🎨</span>
+                            <div>
+                                <p class="font-bold text-white text-sm">Frontend / UI / UX</p>
+                                <p class="text-xs text-slate-500">Angular, VueJs, JavaScript, Typescript, React, Design
+                                    thinking, Figma...</p>
+                            </div>
+                        </div>
+                        <div
+                            class="glass-panel px-5 py-4 rounded-xl border-white/5 hover:border-purple-500/20 transition-colors flex items-center gap-3">
+                            <span class="text-2xl">🧠</span>
+                            <div>
+                                <p class="font-bold text-white text-sm">Ways Of Thinking</p>
+                                <p class="text-xs text-slate-500">Conception, Architecture, Design patterns, Best
+                                    practices</p>
+                            </div>
+                        </div>
+                        <div
+                            class="glass-panel px-5 py-4 rounded-xl border-white/5 hover:border-blue-500/20 transition-colors flex items-center gap-3">
+                            <span class="text-2xl">👨🏻‍💻</span>
+                            <div>
+                                <p class="font-bold text-white text-sm">Backend</p>
+                                <p class="text-xs text-slate-500">Java, Spring, NodeJS…</p>
+                            </div>
+                        </div>
+                        <div
+                            class="glass-panel px-5 py-4 rounded-xl border-white/5 hover:border-green-500/20 transition-colors flex items-center gap-3">
+                            <span class="text-2xl">🌱</span>
+                            <div>
+                                <p class="font-bold text-white text-sm">Sustainable Technologies</p>
+                                <p class="text-xs text-slate-500">GreenIT, Accessibility</p>
+                            </div>
+                        </div>
+                        <div
+                            class="glass-panel px-5 py-4 rounded-xl border-white/5 hover:border-sky-500/20 transition-colors flex items-center gap-3">
+                            <span class="text-2xl">☁️</span>
+                            <div>
+                                <p class="font-bold text-white text-sm">Cloud & DevSecOps</p>
+                                <p class="text-xs text-slate-500">GCP, Firebase, Azure, AWS, CI-CD…</p>
+                            </div>
+                        </div>
+                        <div
+                            class="glass-panel px-5 py-4 rounded-xl border-white/5 hover:border-pink-500/20 transition-colors flex items-center gap-3">
+                            <span class="text-2xl">📱</span>
+                            <div>
+                                <p class="font-bold text-white text-sm">Mobile</p>
+                                <p class="text-xs text-slate-500">Android, Flutter, iOS, React Native, etc...</p>
+                            </div>
+                        </div>
+                        <div
+                            class="glass-panel px-5 py-4 rounded-xl border-white/5 hover:border-orange-500/20 transition-colors flex items-center gap-3">
+                            <span class="text-2xl">🤖</span>
+                            <div>
+                                <p class="font-bold text-white text-sm">Data & AI</p>
+                                <p class="text-xs text-slate-500">LLM, Pytorch, LangChain, Vertex AI, ...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsorship Packages -->
+    <section id="sponsors" class="py-24 px-6 relative z-10">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-display font-black mb-4">Packs de Sponsoring</h2>
+                <p class="text-slate-400 text-lg">Choisissez l'offre qui correspond à vos objectifs stratégiques.</p>
+            </div>
+
+            <!-- Sponsoring table hidden -->
+            <div class="hidden md:block" style="display:none!important">
+            </div>
+
+            <!-- Mobile Cards hidden -->
+            <div class="md:hidden grid gap-6" style="display:none!important">
+                <!-- Silver -->
+                <div class="glass-panel rounded-3xl p-6 border-t-4 border-slate-400">
+                    <div class="flex justify-between items-center mb-4 pt-2">
+                        <h3 class="text-2xl font-black tier-silver">SILVER</h3>
+                        <span class="text-xl font-bold tier-silver">3 000 €</span>
+                    </div>
+                    <p class="text-sm text-slate-400 mb-6">5 lots dispos</p>
+                    <ul class="space-y-4 text-sm font-medium">
+                        <li class="flex items-center gap-3"><i data-lucide="check"
+                                class="w-5 h-5 text-green-500 shrink-0"></i> Remerciements (Site, Affiches)</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check"
+                                class="w-5 h-5 text-green-500 shrink-0"></i> Post dédié sur LinkedIn et X</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check"
+                                class="w-5 h-5 text-green-500 shrink-0"></i> 4 Billets d'entrée</li>
+                        <li class="flex items-center gap-3 text-slate-500"><i data-lucide="minus"
+                                class="w-5 h-5 shrink-0"></i> Logo T-shirts / Badges</li>
+                        <li class="flex items-center gap-3 text-slate-500"><i data-lucide="minus"
+                                class="w-5 h-5 shrink-0"></i> Table Exposant</li>
+                        <li class="flex items-center gap-3 text-slate-500"><i data-lucide="minus"
+                                class="w-5 h-5 shrink-0"></i> Dîner VIP</li>
+                        <li class="flex items-center gap-3 text-slate-500"><i data-lucide="minus"
+                                class="w-5 h-5 shrink-0"></i> Vidéo présentation</li>
+                    </ul>
+                </div>
+                <!-- Gold -->
+                <div class="glass-panel rounded-3xl p-6 border-t-4 border-yellow-500">
+                    <div class="flex justify-between items-center mb-4 pt-2">
+                        <h3 class="text-2xl font-black tier-gold">GOLD</h3>
+                        <span class="text-xl font-bold tier-gold">5 000 €</span>
+                    </div>
+                    <p class="text-sm text-slate-400 mb-6">3 lots dispos</p>
+                    <ul class="space-y-4 text-sm font-medium">
+                        <li class="flex items-center gap-3"><i data-lucide="check"
+                                class="w-5 h-5 text-green-500 shrink-0"></i> Tous avantages Marketing</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check"
+                                class="w-5 h-5 text-green-500 shrink-0"></i> Logo sur T-shirts / Badges</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check"
+                                class="w-5 h-5 text-green-500 shrink-0"></i> Stand basique</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check"
+                                class="w-5 h-5 text-green-500 shrink-0"></i> 6 Billets d'entrée</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check"
+                                class="w-5 h-5 text-green-500 shrink-0"></i> Dîner (2 places)</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check"
+                                class="w-5 h-5 text-green-500 shrink-0"></i> Vidéo (3 min)</li>
+                        <li class="flex items-center gap-3 text-slate-500"><i data-lucide="minus"
+                                class="w-5 h-5 shrink-0"></i> Écran 2m (Networking)</li>
+                    </ul>
+                </div>
+                <!-- Premium -->
+                <div class="glass-panel rounded-3xl p-6 bg-white/5 relative border-t-4 border-purple-400">
+                    <div
+                        class="absolute -top-3 right-6 bg-purple-400 text-black text-[10px] font-black uppercase px-3 py-1 rounded-full">
+                        Limité à 1</div>
+                    <div class="flex justify-between items-center mb-4 pt-2">
+                        <h3 class="text-2xl font-black tier-premium">PREMIUM</h3>
+                        <span class="text-xl font-bold text-white">8 000 €</span>
+                    </div>
+                    <p class="text-sm text-slate-400 mb-6">1 lot dispo</p>
+                    <ul class="space-y-4 text-sm font-medium">
+                        <li class="flex items-center gap-3"><i data-lucide="check"
+                                class="w-5 h-5 text-green-500 shrink-0"></i> Tous avantages Marketing & Logo</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check"
+                                class="w-5 h-5 text-green-500 shrink-0"></i> Stand 8m²*</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check"
+                                class="w-5 h-5 text-green-500 shrink-0"></i> 8 Billets d'entrée</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check"
+                                class="w-5 h-5 text-green-500 shrink-0"></i> Dîner (3 places)</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check"
+                                class="w-5 h-5 text-green-500 shrink-0"></i> Keynote exclusive</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check"
+                                class="w-5 h-5 text-green-500 shrink-0"></i> Écran 2m (Networking)*</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check"
+                                class="w-5 h-5 text-green-500 shrink-0"></i> Interview vidéo sur LinkedIn</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Adds on Sponsorship (hidden) -->
+            <div class="mt-16" style="display:none!important">
+                <h3 class="text-3xl font-display font-black mb-8 text-center text-slate-200">Adds-on Sponsorship</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="glass-panel p-6 rounded-2xl border-white/5 hover:border-blue-500/30 transition-colors">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-xl font-bold">Privatisation Salle</h4>
+                            <span class="bg-blue-600/20 text-blue-400 px-3 py-1 rounded-full text-sm font-bold">1 500
+                                €</span>
+                        </div>
+                        <p class="text-sm text-slate-400 mb-4">Une demi-journée pour démos/codelabs (4 slots)*.</p>
+                        <p class="text-xs font-bold text-slate-500 uppercase">Only Gold & Premium</p>
+                    </div>
+
+                    <div class="glass-panel p-6 rounded-2xl border-white/5 hover:border-blue-500/30 transition-colors">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-xl font-bold">Stand Supplémentaire</h4>
+                            <span class="bg-blue-600/20 text-blue-400 px-3 py-1 rounded-full text-sm font-bold">1 500
+                                €</span>
+                        </div>
+                        <p class="text-sm text-slate-400 mb-4">Deuxième stand au niveau 2* (2-3 packs max).</p>
+                        <p class="text-xs font-bold text-slate-500 uppercase">All Sponsors</p>
+                    </div>
+
+                    <div class="glass-panel p-6 rounded-2xl border-white/5 hover:border-blue-500/30 transition-colors">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-xl font-bold">Intro Talk</h4>
+                            <span class="bg-blue-600/20 text-blue-400 px-3 py-1 rounded-full text-sm font-bold">500
+                                €</span>
+                        </div>
+                        <p class="text-sm text-slate-400 mb-4">5 minutes juste avant la conférence de votre choix.</p>
+                        <p class="text-xs font-bold text-slate-500 uppercase">Visibilité Ciblée</p>
+                    </div>
+
+                    <div
+                        class="glass-panel p-6 rounded-2xl border-white/5 hover:border-purple-500/30 transition-colors">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-xl font-bold text-purple-200">Le Dîner VIP</h4>
+                            <span class="bg-purple-600/20 text-purple-400 px-3 py-1 rounded-full text-sm font-bold">1
+                                250 €</span>
+                        </div>
+                        <p class="text-sm text-slate-400 mb-4">Remerciements + Talk 10min. Inclus : 2 places dîner + 2
+                            billets d'entrée conférence.</p>
+                        <p class="text-xs font-bold text-purple-500 uppercase">1 Seul Pack</p>
+                    </div>
+
+                    <div class="glass-panel p-6 rounded-2xl border-white/5 hover:border-green-500/30 transition-colors">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-xl font-bold text-green-200">Brain Food Sponsor</h4>
+                            <span
+                                class="bg-green-600/20 text-green-400 px-3 py-1 rounded-full text-sm font-bold block whitespace-nowrap">700
+                                €</span>
+                        </div>
+                        <p class="text-sm text-slate-400 mb-4">Partenaire digital/food. (Ou prestation équiv.). Inclus :
+                            Remerciements web/affiches + 2 billets.</p>
+                        <p class="text-xs font-bold text-green-500 uppercase">6 Packs Dispos</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ticket Sales -->
+            <div class="mt-16 text-center">
+                <div
+                    class="glass-panel rounded-2xl p-8 border border-yellow-500/20 inline-flex flex-col items-center gap-4 max-w-md mx-auto">
+                    <div class="w-14 h-14 rounded-full bg-yellow-500/20 flex items-center justify-center">
+                        <i data-lucide="ticket" class="w-7 h-7 text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-display font-black text-white">Billetterie</h3>
+                    <p class="text-yellow-400 font-bold text-lg">🎟️ Ticket sales — coming soon!</p>
+                    <p class="text-slate-400 text-sm">Les ventes de billets ouvriront prochainement. Restez
+                        connectés&nbsp;!</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Venue Section -->
+    <section id="lieu" class="py-20 px-6 relative z-10 bg-gradient-to-t from-slate-900 to-transparent">
+        <div class="max-w-7xl mx-auto">
+            <div class="glass-panel rounded-[2rem] p-10 md:p-16 border-white/10 overflow-hidden relative">
+                <!-- Glowing BG -->
+                <div
+                    class="absolute right-0 top-0 w-1/2 h-full bg-blue-600/10 blur-[100px] rounded-full pointer-events-none">
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-12 items-center relative z-10">
+                    <div>
+                        <div
+                            class="inline-flex gap-2 items-center text-blue-400 text-sm font-bold uppercase tracking-widest mb-4">
+                            <i data-lucide="map-pin" class="w-4 h-4"></i> Nanterre-Université
+                        </div>
+                        <h2 class="text-4xl md:text-5xl font-display font-black mb-6">La Fabrique de la Connaissance
+                        </h2>
+                        <p class="text-slate-400 text-lg mb-8 leading-relaxed">
+                            Un espace industriel moderne et unique, 100% privatisé pour l'expérience ultime des
+                            développeurs.
+                        </p>
+
+                        <div class="grid grid-cols-2 gap-x-4 gap-y-6 mb-8">
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="layout-grid" class="w-6 h-6 text-blue-400"></i>
+                                <span class="font-bold text-slate-300">12 Salles privatisées</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="sun" class="w-6 h-6 text-yellow-500"></i>
+                                <span class="font-bold text-slate-300">2 Terrasses</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="shield-check" class="w-6 h-6 text-green-400"></i>
+                                <span class="font-bold text-slate-300">Certifié ERP</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="wheelchair" class="w-6 h-6 text-blue-400"></i>
+                                <span class="font-bold text-slate-300">Accès PMR autonome</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="leaf" class="w-6 h-6 text-green-500"></i>
+                                <span class="font-bold text-slate-300">Éco-responsable</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="wifi" class="w-6 h-6 text-purple-400"></i>
+                                <span class="font-bold text-slate-300">Wifi Fibre</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="car" class="w-6 h-6 text-slate-400"></i>
+                                <span class="font-bold text-slate-300">Parking / Vestiaires</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="maximize" class="w-6 h-6 text-slate-400"></i>
+                                <span class="font-bold text-slate-300 text-sm">Zone Networking (175x80cm)</span>
+                            </div>
+                        </div>
+
+                        <a href="https://my.matterport.com/show/?m=6dUjudHj8eA" target="_blank"
+                            class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-xl font-bold transition-colors">
+                            <i data-lucide="camera" class="w-5 h-5"></i> Faire la Visite Virtuelle
+                        </a>
+                    </div>
+
+                    <!-- Venue Photos -->
+                    <div class="grid grid-cols-2 gap-3">
+                        <img src="images/venue/main_hall.png" alt="La Fabrique – Grande Salle"
+                            class="col-span-2 rounded-2xl w-full h-48 object-cover opacity-75 hover:opacity-100 transition-opacity duration-300 cursor-pointer">
+                        <img src="images/venue/exterior.png" alt="La Fabrique – Extérieur"
+                            class="rounded-2xl w-full h-32 object-cover opacity-75 hover:opacity-100 transition-opacity duration-300 cursor-pointer">
+                        <img src="images/venue/third_image.png" alt="La Fabrique – Autre vue"
+                            class="rounded-2xl w-full h-32 object-cover opacity-75 hover:opacity-100 transition-opacity duration-300 cursor-pointer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DevFest Gallery Section -->
+    <section class="py-20 px-6 relative z-10">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="text-blue-400 font-bold uppercase tracking-widest text-sm mb-2 block">Souvenirs</span>
+                <h2 class="text-4xl md:text-5xl font-display font-black">DevFest en images</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-4">
+                <div class="relative group rounded-2xl overflow-hidden">
+                    <img src="images/devfest/speaker.png" alt="Speaker DevFest"
+                        class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                        <p class="text-white font-bold text-sm">Keynote &amp; Talks 🎤</p>
+                    </div>
+                </div>
+                <div class="relative group rounded-2xl overflow-hidden">
+                    <img src="images/devfest/networking.png" alt="Networking DevFest"
+                        class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                        <p class="text-white font-bold text-sm">Networking 🤝</p>
+                    </div>
+                </div>
+                <div class="relative group rounded-2xl overflow-hidden">
+                    <img src="images/devfest/crowd.png" alt="Crowd DevFest"
+                        class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                        <p class="text-white font-bold text-sm">La Communauté 🙌</p>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center text-slate-500 text-sm mt-4 italic">📸 Remplacez ces images par de vraies photos de
+                DevFest Paris</p>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-20 px-6 relative z-10 glass-panel border-y border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-display font-black mb-12 text-center">Meet the New Team</h2>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6 text-center">
+
+                <!-- Abdul Attal -->
+                <div class="flex flex-col items-center">
+                    <div
+                        class="w-20 h-20 rounded-full overflow-hidden border-2 border-blue-500/50 ring-2 ring-blue-500/10 mb-4">
+                        <img src="images/team/abdul_attal.png" alt="Abdul Attal" class="w-full h-full object-cover">
+                    </div>
+                    <p class="font-bold text-sm text-white">Abdul Attal</p>
+                    <p class="text-xs text-slate-400 mt-1">Relations Communauté & Bénévoles</p>
+                </div>
+
+                <!-- Houssem Mahmoud -->
+                <div class="flex flex-col items-center">
+                    <div
+                        class="w-20 h-20 rounded-full overflow-hidden border-2 border-purple-500/50 ring-2 ring-purple-500/10 mb-4">
+                        <img src="images/team/houssem_mahmoud.png" alt="Houssem Mahmoud"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <p class="font-bold text-sm text-white">Houssem Mahmoud</p>
+                    <p class="text-xs text-slate-400 mt-1">Sponsoring Lead</p>
+                </div>
+
+                <!-- Jihène Mejri -->
+                <div class="flex flex-col items-center">
+                    <div
+                        class="w-20 h-20 rounded-full overflow-hidden border-2 border-green-500/50 ring-2 ring-green-500/10 mb-4 relative">
+                        <img src="images/team/jihene_mejri.png" alt="Jihène Mejri" class="w-full h-full object-cover">
+                        <span
+                            class="absolute -top-1 -right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-black animate-pulse"></span>
+                    </div>
+                    <p class="font-bold text-sm text-white">Jihène Mejri</p>
+                    <p class="text-xs text-slate-400 mt-1">DevFest Manager & Coordinator</p>
+                </div>
+
+                <!-- Chrys Le Gall -->
+                <div class="flex flex-col items-center">
+                    <div
+                        class="w-20 h-20 rounded-full overflow-hidden border-2 border-yellow-500/50 ring-2 ring-yellow-500/10 mb-4">
+                        <img src="images/team/chrys_le_gall.png" alt="Chrys Le Gall" class="w-full h-full object-cover">
+                    </div>
+                    <p class="font-bold text-sm text-white">Chrys Le Gall</p>
+                    <p class="text-xs text-slate-400 mt-1">CFP & Relations Speakers</p>
+                </div>
+
+                <!-- Edouard Marquez -->
+                <div class="flex flex-col items-center">
+                    <div
+                        class="w-20 h-20 rounded-full overflow-hidden border-2 border-red-500/50 ring-2 ring-red-500/10 mb-4">
+                        <img src="images/team/edouard_marquez.png" alt="Edouard Marquez"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <p class="font-bold text-sm text-white">Edouard Marquez</p>
+                    <p class="text-xs text-slate-400 mt-1">Captation & Technical Support</p>
+                </div>
+
+                <!-- Christina Souaiby -->
+                <div class="flex flex-col items-center">
+                    <div
+                        class="w-20 h-20 rounded-full overflow-hidden border-2 border-pink-500/50 ring-2 ring-pink-500/10 mb-4">
+                        <img src="images/team/christina_souaiby.png" alt="Christina Souaiby"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <p class="font-bold text-sm text-white">Christina Souaiby</p>
+                    <p class="text-xs text-slate-400 mt-1">Comm' & Réseaux sociaux</p>
+                </div>
+
+                <!-- Jennifer Florentia -->
+                <div class="flex flex-col items-center">
+                    <div
+                        class="w-20 h-20 rounded-full overflow-hidden border-2 border-indigo-500/50 ring-2 ring-indigo-500/10 mb-4">
+                        <img src="images/team/jennifer_florentia.png" alt="Jennifer Florentia"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <p class="font-bold text-sm text-white">Jennifer Florentia</p>
+                    <p class="text-xs text-slate-400 mt-1">Design & Marketing</p>
+                </div>
+
+                <!-- Cogni — keep animated robot, no photo -->
+                <div class="flex flex-col items-center">
+                    <div class="relative mb-4">
+                        <div
+                            class="w-20 h-20 rounded-full bg-gradient-to-br from-cyan-500/30 to-purple-500/30 border border-cyan-400/50 flex items-center justify-center animate-pulse">
+                            <svg class="w-10 h-10 text-cyan-300" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <rect x="3" y="8" width="18" height="13" rx="2" />
+                                <path d="M8 8V6a4 4 0 018 0v2" />
+                                <circle cx="9" cy="14" r="1.5" fill="currentColor" />
+                                <circle cx="15" cy="14" r="1.5" fill="currentColor" />
+                                <path d="M9 17.5h6" stroke-linecap="round" />
+                                <path d="M12 3v1M7 3l.5.87M17 3l-.5.87" />
+                            </svg>
+                        </div>
+                        <span
+                            class="absolute -top-1 -right-1 w-4 h-4 bg-cyan-400 rounded-full border-2 border-slate-900 animate-ping"></span>
+                    </div>
+                    <p class="font-bold text-sm text-white">Cogni</p>
+                    <p class="text-xs text-cyan-400 mt-1">Assistant IA 🤖</p>
+                </div>
+
+            </div>
+
+            <p class="text-center text-slate-400 font-medium italic mt-12 max-w-xl mx-auto">Sans vous… la FABRIQUE ne
+                tourne pas. Prêts à co-construire DevFest 2026 ensemble ?</p>
+        </div>
+    </section>
+
+    <!-- GDG Paris En Chiffres -->
+    <section id="chiffres" class="py-20 px-6 relative z-10">
+        <div class="max-w-7xl mx-auto">
+            <div class="glass-panel rounded-3xl p-8 md:p-14 border-white/5">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-display font-black mb-4">GDG Paris en Chiffres</h2>
+                    <p class="text-slate-400 max-w-2xl mx-auto">Une communauté vibrante et engagée depuis 15 ans (2011),
+                        organisant plus de 10 meetups par an (+50 pers/meetup).</p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                    <div class="p-6 rounded-2xl bg-slate-800/50 border border-white/5">
+                        <i data-lucide="users" class="w-8 h-8 mx-auto mb-4 text-blue-400"></i>
+                        <p class="text-4xl font-display font-black text-white mb-2">4k+</p>
+                        <p class="text-xs uppercase tracking-widest text-slate-400 font-bold">Membres Meetup</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-slate-800/50 border border-white/5">
+                        <svg class="w-8 h-8 mx-auto mb-4 text-white" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 22.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                        <p class="text-4xl font-display font-black text-white mb-2">2k+</p>
+                        <p
+                            class="text-xs uppercase tracking-widest text-slate-400 font-bold flex items-center justify-center gap-1.5">
+                            Followers on X (Twitter)
+                        </p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-slate-800/50 border border-white/5 flex flex-col items-center">
+                        <svg class="w-8 h-8 mb-4 text-[#0A66C2]" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                        <p class="text-4xl font-display font-black text-white mb-2">1k+</p>
+                        <p
+                            class="text-xs uppercase tracking-widest text-slate-400 font-bold flex items-center justify-center gap-1.5">
+                            Followers LinkedIn
+                        </p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-slate-800/50 border border-white/5">
+                        <i data-lucide="calendar-days" class="w-8 h-8 mx-auto mb-4 text-blue-400"></i>
+                        <p class="text-4xl font-display font-black text-white mb-2">15</p>
+                        <p class="text-xs uppercase tracking-widest text-slate-400 font-bold">Années d'existence</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="py-16 px-6 bg-black relative z-10">
+        <div class="max-w-7xl mx-auto text-center border-t border-white/10 pt-16">
+            <h2 class="text-4xl font-display font-black mb-6">Nous contacter</h2>
+            <p class="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">Pour toute demande de sponsoring, n'hésitez pas à
+                joindre notre coordinatrice.</p>
+
+            <div class="flex flex-col md:flex-row items-center justify-center gap-6 mb-16">
+                <a href="mailto:contact@gdgparis.com"
+                    class="glass-panel px-8 py-4 rounded-full flex items-center gap-3 hover:bg-white/5 transition border-white/10">
+                    <i data-lucide="mail" class="w-5 h-5 text-blue-400"></i>
+                    <span class="font-bold text-lg">contact@gdgparis.com</span>
+                </a>
+                <a href="tel:+33699511591"
+                    class="glass-panel px-8 py-4 rounded-full flex items-center gap-3 hover:bg-white/5 transition border-white/10">
+                    <i data-lucide="phone" class="w-5 h-5 text-green-400"></i>
+                    <span class="font-bold text-lg">Jihène MEJRI : +33 6 99 51 15 91</span>
+                </a>
+            </div>
+
+            <div
+                class="flex flex-col md:flex-row items-center justify-between text-sm text-slate-500 pt-8 border-t border-white/5">
+                <div class="flex items-center gap-4 mb-4 md:mb-0">
+                    <div class="font-display font-black text-white text-lg">P<span class="text-blue-500">26</span></div>
+                    <p>© 2026 GDG Paris. Tous droits réservés.</p>
+                </div>
+                <div class="flex gap-6">
+                    <a href="https://gdg.community.dev/gdg-paris/" target="_blank"
+                        class="hover:text-blue-400 transition-colors flex items-center gap-1">
+                        <i data-lucide="globe" class="w-4 h-4"></i> GDG Community
+                    </a>
+                    <a href="https://www.linkedin.com/company/gdg-paris" target="_blank"
+                        class="hover:text-blue-400 transition-colors flex items-center gap-1">
+                        <i data-lucide="linkedin" class="w-4 h-4"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
