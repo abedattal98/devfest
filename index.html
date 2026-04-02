@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" class="scroll-smooth">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -19,11 +19,6 @@
             --bg-darker: #050810;
         }
 
-        html,
-        body {
-            overflow-x: hidden;
-            width: 100%;
-        }
 
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
@@ -105,6 +100,30 @@
             transform: translate(-50%, -50%);
             opacity: 0.2;
             animation-delay: -10s;
+        }
+
+        @media (max-width: 768px) {
+            .glow-primary {
+                width: 180px;
+                height: 180px;
+                top: -60px;
+                right: -40px;
+            }
+
+            .glow-red {
+                width: 140px;
+                height: 140px;
+                left: -40px;
+            }
+
+            .glow-green {
+                width: 160px;
+                height: 160px;
+            }
+
+            .glow-circle {
+                filter: blur(50px);
+            }
         }
 
         @keyframes float {
@@ -206,12 +225,14 @@
     </style>
 </head>
 
-<body class="antialiased relative">
+<body class="antialiased relative overflow-x-hidden">
 
     <!-- Ambient Background Lighting -->
-    <div class="glow-circle glow-primary"></div>
-    <div class="glow-circle glow-red"></div>
-    <div class="glow-circle glow-green"></div>
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="glow-circle glow-primary"></div>
+        <div class="glow-circle glow-red"></div>
+        <div class="glow-circle glow-green"></div>
+    </div>
 
     <!-- Header -->
     <nav class="fixed w-full z-50 glass-panel border-b-0 border-white/5 top-0">
