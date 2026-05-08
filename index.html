@@ -113,11 +113,11 @@
                         <i data-lucide="heart" class="w-5 h-5 text-brand-red"></i>
                         <span data-i18n="nav.sponsoring">Devenir Sponsor</span>
                     </a>
-                    <a href="#lieu"
-                        class="glass-panel text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition-colors flex items-center gap-2">
+                    <button onclick="scrollToSection('lieu')"
+                        class="glass-panel text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition-colors flex items-center gap-2 cursor-pointer">
                         <span data-i18n="hero.cta_venue">Découvrir le lieu</span> <i data-lucide="map-pin"
                             class="w-5 h-5 text-amber-400"></i>
-                    </a>
+                    </button>
                 </div>
             </div>
         </section>
@@ -1291,18 +1291,22 @@
             }
         }
 
-        // --- Congi Easter Egg ---
-        function scrollToTicketing() {
+        // --- Navigation Helpers ---
+        function scrollToSection(id) {
             if (window.location.hash !== '#/' && window.location.hash !== '') {
                 window.location.hash = '#/';
                 setTimeout(() => {
-                    const el = document.getElementById('ticketing');
+                    const el = document.getElementById(id);
                     if (el) el.scrollIntoView({ behavior: 'smooth' });
                 }, 150);
             } else {
-                const el = document.getElementById('ticketing');
+                const el = document.getElementById(id);
                 if (el) el.scrollIntoView({ behavior: 'smooth' });
             }
+        }
+
+        function scrollToTicketing() {
+            scrollToSection('ticketing');
         }
 
         function initCongi() {
