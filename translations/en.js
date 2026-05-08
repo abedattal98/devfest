@@ -25,7 +25,7 @@ window.translations_en = {
   },
   "hero": {
     "badge": "November 27, 2026 · La Fabrique de la Connaissance",
-    "title1": "The Factory of",
+    "title1": "The Factory",
     "title2": "DevFest Paris 2026.",
     "subtitle": "An international tech conference with strong local impact — 8th edition by GDG Paris. 100% independent & non-profit.",
     "cta_cfp": "Submit a talk",
