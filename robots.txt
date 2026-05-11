@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://devfest.gdgparis.fr/sitemap.xml
