@@ -5,22 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevFest Paris 2026 - Conférence Tech GDG Paris</title>
-    <meta name="description" content="DevFest Paris 2026 : La conférence tech incontournable organisée par le GDG Paris. 450 participants, 30+ experts, 5 tracks sur le Cloud, l'IA, le Web et le Mobile. Rejoignez-nous le 27 novembre 2026.">
-    <meta name="keywords" content="DevFest, Paris, GDG Paris, Conférence Tech, Google Developer Group, Cloud, Intelligence Artificielle, Frontend, Backend, Mobile, DevSecOps, La Fabrique de la Connaissance">
+    <meta name="description"
+        content="DevFest Paris 2026 : La conférence tech incontournable organisée par le GDG Paris. 450 participants, 30+ experts, 5 tracks sur le Cloud, l'IA, le Web et le Mobile. Rejoignez-nous le 27 novembre 2026.">
+    <meta name="keywords"
+        content="DevFest, Paris, GDG Paris, Conférence Tech, Google Developer Group, Cloud, Intelligence Artificielle, Frontend, Backend, Mobile, DevSecOps, La Fabrique de la Connaissance">
     <meta name="author" content="GDG Paris">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://devfest.gdgparis.fr/">
     <meta property="og:title" content="DevFest Paris 2026 - Conférence Tech GDG Paris">
-    <meta property="og:description" content="La conférence tech incontournable à Paris. 8ème édition, 100% indépendante et communautaire. 450 participants, 30+ speakers experts.">
+    <meta property="og:description"
+        content="La conférence tech incontournable à Paris. 8ème édition, 100% indépendante et communautaire. 450 participants, 30+ speakers experts.">
     <meta property="og:image" content="https://devfest.gdgparis.fr/main.jpeg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://devfest.gdgparis.fr/">
     <meta property="twitter:title" content="DevFest Paris 2026 - Conférence Tech GDG Paris">
-    <meta property="twitter:description" content="La conférence tech incontournable à Paris. 8ème édition, 100% indépendante et communautaire.">
+    <meta property="twitter:description"
+        content="La conférence tech incontournable à Paris. 8ème édition, 100% indépendante et communautaire.">
     <meta property="twitter:image" content="https://devfest.gdgparis.fr/main.jpeg">
 
     <!-- Favicon -->
@@ -76,14 +80,15 @@
     <!-- Header -->
     <nav class="fixed w-full z-50 glass-panel border-b-0 border-white/5 top-0">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="#" class="flex items-center gap-4 group shrink-0">
+            <a href="/" class="flex items-center gap-4 group shrink-0">
                 <img src="images/gdg-logo.svg" class="h-8 w-auto shrink-0" alt="GDG Paris">
             </a>
             <div class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-300">
-                <a href="#/" class="hover:text-white transition-colors" data-i18n="nav.home">Accueil</a>
-                <a href="#/sponsoring" class="hover:text-white transition-colors" data-i18n="nav.sponsoring">Devenir
-                    Sponsor</a>
-                <a href="#/speakers" class="hover:text-white transition-colors" data-i18n="nav.speakers">Speakers</a>
+                <a href="/" class="hover:text-white transition-colors" data-i18n="nav.home">Accueil</a>
+                <a href="/sponsoring" class="hover:text-white transition-colors" data-i18n="nav.sponsoring">Devenir
+                    sponsor</a>
+                <a href="/speakers" class="hover:text-white transition-colors" data-i18n="nav.speakers">Speakers</a>
+
                 <a href="#contact"
                     class="bg-amber-700 text-white px-5 py-2.5 rounded-full hover:bg-amber-600 transition-all font-bold shadow-lg shadow-amber-500/20"
                     data-i18n="nav.contact">Contactez-nous</a>
@@ -91,7 +96,8 @@
 
             <div class="flex items-center gap-2">
                 <!-- Billetterie Button -->
-                <button onclick="scrollToTicketing()" class="bg-yellow-500/20 text-yellow-400 hover:bg-yellow-500/30 px-3 md:px-4 py-2 rounded-full font-bold transition-all flex items-center gap-2 text-sm border border-yellow-500/30 cursor-pointer">
+                <button onclick="scrollToTicketing()"
+                    class="bg-yellow-500/20 text-yellow-400 hover:bg-yellow-500/30 px-3 md:px-4 py-2 rounded-full font-bold transition-all flex items-center gap-2 text-sm border border-yellow-500/30 cursor-pointer">
                     <i data-lucide="ticket" class="w-5 h-5 shrink-0"></i>
                     <span class="hidden md:inline" data-i18n="ticketing.title">Billetterie (Soon)</span>
                 </button>
@@ -118,13 +124,13 @@
             <div class="overflow-hidden">
                 <div
                     class="bg-[#0a0a0a]/95 backdrop-blur-xl border-b border-white/10 flex flex-col items-start gap-4 p-6 shadow-[0_20px_40px_-10px_rgba(0,0,0,0.8)]">
-                    <a href="#/"
+                    <a href="/"
                         class="text-xl font-bold text-white hover:text-amber-400 w-full pb-4 border-b border-white/5"
                         onclick="toggleMenu()" data-i18n="nav.home">Accueil</a>
-                    <a href="#/sponsoring"
+                    <a href="/sponsoring"
                         class="text-xl font-bold text-white hover:text-amber-400 w-full pb-4 border-b border-white/5"
                         onclick="toggleMenu()" data-i18n="nav.sponsoring">Devenir Sponsor</a>
-                    <a href="#/speakers"
+                    <a href="/speakers"
                         class="text-xl font-bold text-white hover:text-amber-400 w-full pb-4 border-b border-white/5"
                         onclick="toggleMenu()" data-i18n="nav.speakers">Speakers</a>
                     <a href="#contact"
@@ -137,8 +143,20 @@
 
     <main id="router-view" class="pt-20">
         <!-- Home Route -->
-        <section data-route="home" class="relative pt-20 pb-20 px-6 z-10">
-            <div class="max-w-7xl mx-auto flex flex-col items-center text-center">
+        <section data-route="home" class="relative pt-20 pb-28 px-6 z-10 overflow-hidden">
+            <div class="hero-glow"></div>
+            <!-- Floating Decorative Icons -->
+            <div class="absolute top-20 left-10 tech-icon-float" style="animation-delay: 0s;">
+                <i data-lucide="cpu" class="w-12 h-12 text-amber-500"></i>
+            </div>
+            <div class="absolute bottom-20 right-10 tech-icon-float" style="animation-delay: -3s;">
+                <i data-lucide="code" class="w-16 h-16 text-orange-500"></i>
+            </div>
+            <div class="absolute top-40 right-20 tech-icon-float" style="animation-delay: -5s; opacity: 0.05;">
+                <i data-lucide="layers" class="w-20 h-20 text-white"></i>
+            </div>
+
+            <div class="max-w-7xl mx-auto flex flex-col items-center text-center relative z-10">
                 <div
                     class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel text-amber-400 text-xs font-bold uppercase tracking-widest mb-8 border-amber-500/20">
                     <i data-lucide="calendar" class="w-4 h-4"></i> <span data-i18n="hero.badge">27 Novembre 2026 · La
@@ -157,11 +175,11 @@
                 </p>
 
                 <div class="flex flex-wrap justify-center gap-4">
-                    <a href="https://conference-hall.io/devfest-paris-2026" target="_blank"
+                    <a href="javascript:void(0)" onclick="scrollToSection('cfp')"
                         class="bg-gradient-to-r from-amber-600 to-orange-700 text-white px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform flex items-center gap-2 shadow-lg shadow-amber-500/30">
                         <i data-lucide="mic" class="w-5 h-5"></i> <span data-i18n="hero.cta_cfp">Proposer un talk</span>
                     </a>
-                    <a href="#/sponsoring"
+                    <a href="/sponsoring"
                         class="bg-white text-slate-900 px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform flex items-center gap-2">
                         <i data-lucide="heart" class="w-5 h-5 text-brand-red"></i>
                         <span data-i18n="nav.sponsoring">Devenir Sponsor</span>
@@ -339,13 +357,17 @@
         <!-- Ticket Sales -->
         <section data-route="home" id="ticketing" class="py-24 px-6 relative z-10 border-t border-white/5 bg-black/20">
             <div class="max-w-md mx-auto text-center">
-                <div class="glass-panel rounded-2xl p-8 border border-yellow-500/20 inline-flex flex-col items-center gap-4">
+                <div
+                    class="glass-panel rounded-2xl p-8 border border-yellow-500/20 inline-flex flex-col items-center gap-4">
                     <div class="w-14 h-14 rounded-full bg-yellow-500/20 flex items-center justify-center">
                         <i data-lucide="ticket" class="w-7 h-7 text-yellow-400"></i>
                     </div>
-                    <h3 class="text-2xl font-display font-black text-white" data-i18n="ticketing.title">Billetterie (Soon)</h3>
-                    <p class="text-yellow-400 font-bold text-lg" data-i18n="ticketing.subtitle">🎟️ Ticket sales — coming soon!</p>
-                    <p class="text-slate-400 text-sm" data-i18n="ticketing.desc">Les ventes de billets ouvriront prochainement. Restez connectés !</p>
+                    <h3 class="text-2xl font-display font-black text-white" data-i18n="ticketing.title">Billetterie
+                        (Soon)</h3>
+                    <p class="text-yellow-400 font-bold text-lg" data-i18n="ticketing.subtitle">🎟️ Ticket sales —
+                        coming soon!</p>
+                    <p class="text-slate-400 text-sm" data-i18n="ticketing.desc">Les ventes de billets ouvriront
+                        prochainement. Restez connectés !</p>
                 </div>
             </div>
         </section>
@@ -477,70 +499,72 @@
                         <h3 class="text-3xl font-display font-black mb-8" data-i18n="cfp.fmt_title">Types de sessions
                         </h3>
 
-                        <div class="space-y-5">
+                        <div class="space-y-4">
                             <!-- Conference -->
                             <div
-                                class="glass-panel p-6 rounded-2xl border-white/5 hover:border-amber-500/20 transition-colors group">
-                                <div class="flex items-start gap-4">
+                                class="glass-panel p-6 rounded-2xl border-white/5 hover:border-amber-500/20 transition-all duration-300 group hover:translate-x-1">
+                                <div class="flex items-start gap-5">
                                     <div
-                                        class="w-12 h-12 shrink-0 rounded-xl bg-amber-500/20 flex items-center justify-center text-amber-400 group-hover:bg-amber-500/30 transition-colors">
-                                        <i data-lucide="presentation" class="w-6 h-6"></i>
+                                        class="w-12 h-12 shrink-0 rounded-xl bg-amber-500/20 flex items-center justify-center text-amber-400 group-hover:bg-amber-500/30 transition-colors shadow-lg shadow-amber-500/10">
+                                        <i data-lucide="mic" class="w-6 h-6"></i>
                                     </div>
                                     <div class="flex-1">
-                                        <div class="flex items-center gap-3 mb-2">
-                                            <h4 class="text-lg font-bold text-white">Conference</h4>
+                                        <div class="flex items-center justify-between mb-2">
+                                            <h4 class="text-lg font-bold text-white group-hover:text-amber-400 transition-colors"
+                                                data-i18n="cfp.fmt_conf_title">Conférence</h4>
                                             <span
-                                                class="bg-amber-600/20 text-amber-400 px-2.5 py-0.5 rounded-full text-xs font-bold">45
-                                                min</span>
+                                                class="bg-amber-600/20 text-amber-400 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider border border-amber-500/20"
+                                                data-i18n="cfp.fmt_conf_time">45 min</span>
                                         </div>
-                                        <p class="text-slate-400 text-sm mb-1">🇫🇷 Il peut s'agir de live coding, de
-                                            diapositives ou des deux. 50 minutes, questions-réponses incluses.</p>
-                                        <p class="text-slate-500 text-sm">🇬🇧 It could be a live code, slides, or both.
-                                            50min including Q&A</p>
+                                        <p class="text-slate-400 text-sm leading-relaxed" data-i18n="cfp.fmt_conf_desc">
+                                            Il peut s'agir de live coding, de diapositives ou des deux. 45 minutes,
+                                            questions-réponses incluses.</p>
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Lunch Talk -->
                             <div
-                                class="glass-panel p-6 rounded-2xl border-white/5 hover:border-yellow-500/20 transition-colors group">
-                                <div class="flex items-start gap-4">
+                                class="glass-panel p-6 rounded-2xl border-white/5 hover:border-yellow-500/20 transition-all duration-300 group hover:translate-x-1">
+                                <div class="flex items-start gap-5">
                                     <div
-                                        class="w-12 h-12 shrink-0 rounded-xl bg-yellow-500/20 flex items-center justify-center text-yellow-400 group-hover:bg-yellow-500/30 transition-colors">
+                                        class="w-12 h-12 shrink-0 rounded-xl bg-yellow-500/20 flex items-center justify-center text-yellow-400 group-hover:bg-yellow-500/30 transition-colors shadow-lg shadow-yellow-500/10">
                                         <i data-lucide="sandwich" class="w-6 h-6"></i>
                                     </div>
                                     <div class="flex-1">
-                                        <div class="flex items-center gap-3 mb-2">
-                                            <h4 class="text-lg font-bold text-white">Lunch Talk</h4>
+                                        <div class="flex items-center justify-between mb-2">
+                                            <h4 class="text-lg font-bold text-white group-hover:text-yellow-400 transition-colors"
+                                                data-i18n="cfp.fmt_lunch_title">Lunch Talk</h4>
                                             <span
-                                                class="bg-yellow-600/20 text-yellow-400 px-2.5 py-0.5 rounded-full text-xs font-bold">20
-                                                min</span>
+                                                class="bg-yellow-600/20 text-yellow-400 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider border border-yellow-500/20"
+                                                data-i18n="cfp.fmt_lunch_time">20 min</span>
                                         </div>
-                                        <p class="text-slate-400 text-sm mb-1">🇫🇷 Une présentation courte. 20 minutes,
+                                        <p class="text-slate-400 text-sm leading-relaxed"
+                                            data-i18n="cfp.fmt_lunch_desc">Une présentation courte. 20 minutes,
                                             questions-réponses incluses.</p>
-                                        <p class="text-slate-500 text-sm">🇬🇧 A short talk. 20min including Q&A</p>
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Workshop -->
                             <div
-                                class="glass-panel p-6 rounded-2xl border-white/5 hover:border-brand-primary/20 transition-colors group">
-                                <div class="flex items-start gap-4">
+                                class="glass-panel p-6 rounded-2xl border-white/5 hover:border-brand-primary/20 transition-all duration-300 group hover:translate-x-1">
+                                <div class="flex items-start gap-5">
                                     <div
-                                        class="w-12 h-12 shrink-0 rounded-xl bg-brand-primary-20 flex items-center justify-center text-brand-primary group-hover:bg-brand-primary/30 transition-colors">
+                                        class="w-12 h-12 shrink-0 rounded-xl bg-brand-primary-20 flex items-center justify-center text-brand-primary group-hover:bg-brand-primary/30 transition-colors shadow-lg shadow-brand-primary/10">
                                         <i data-lucide="code-2" class="w-6 h-6"></i>
                                     </div>
                                     <div class="flex-1">
-                                        <div class="flex items-center gap-3 mb-2">
-                                            <h4 class="text-lg font-bold text-white">Workshop</h4>
+                                        <div class="flex items-center justify-between mb-2">
+                                            <h4 class="text-lg font-bold text-white group-hover:text-brand-primary transition-colors"
+                                                data-i18n="cfp.fmt_workshop_title">Workshop</h4>
                                             <span
-                                                class="bg-brand-primary-20 text-brand-primary px-2.5 py-0.5 rounded-full text-xs font-bold">1h30</span>
+                                                class="bg-brand-primary-20 text-brand-primary px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider border border-brand-primary/20"
+                                                data-i18n="cfp.fmt_workshop_time">1h30</span>
                                         </div>
-                                        <p class="text-slate-400 text-sm mb-1">🇫🇷 Pratique ! Codons ensemble. Atelier
-                                            de
-                                            90 minutes.</p>
-                                        <p class="text-slate-500 text-sm">🇬🇧 Hand's On! Let's code. 90min workshop</p>
+                                        <p class="text-slate-400 text-sm leading-relaxed"
+                                            data-i18n="cfp.fmt_workshop_desc">Pratique ! Codons ensemble. Atelier de 90
+                                            minutes.</p>
                                     </div>
                                 </div>
                             </div>
@@ -553,64 +577,89 @@
                             data-i18n="cfp.cat_label">Catégories</span>
                         <h3 class="text-3xl font-display font-black mb-8" data-i18n="cfp.cat_title">Thèmes acceptés</h3>
 
-                        <div class="grid grid-cols-1 gap-3">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-3">
                             <div
-                                class="glass-panel px-5 py-4 rounded-xl border-white/5 hover:border-amber-500/20 transition-colors flex items-center gap-3">
-                                <span class="text-2xl">🎨</span>
+                                class="glass-panel px-5 py-4 rounded-xl border-white/5 hover:border-amber-500/20 transition-all duration-300 flex items-center gap-4 group hover:bg-white/5">
+                                <div
+                                    class="w-10 h-10 shrink-0 rounded-lg bg-amber-500/10 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+                                    🎨</div>
                                 <div>
-                                    <p class="font-bold text-white text-sm">Frontend / UI / UX</p>
-                                    <p class="text-xs text-slate-500">Angular, VueJs, JavaScript, Typescript, React,
-                                        Design
-                                        thinking, Figma...</p>
+                                    <p class="font-bold text-white text-sm group-hover:text-amber-400 transition-colors"
+                                        data-i18n="cfp.cat_frontend">Frontend / UI / UX</p>
+                                    <p class="text-xs text-slate-500 line-clamp-1" data-i18n="cfp.cat_frontend_desc">
+                                        Angular, VueJs, JavaScript, Typescript, React, Design thinking, Figma...</p>
                                 </div>
                             </div>
                             <div
-                                class="glass-panel px-5 py-4 rounded-xl border-white/5 hover:border-purple-500/20 transition-colors flex items-center gap-3">
-                                <span class="text-2xl">🧠</span>
+                                class="glass-panel px-5 py-4 rounded-xl border-white/5 hover:border-purple-500/20 transition-all duration-300 flex items-center gap-4 group hover:bg-white/5">
+                                <div
+                                    class="w-10 h-10 shrink-0 rounded-lg bg-purple-500/10 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+                                    🧠</div>
                                 <div>
-                                    <p class="font-bold text-white text-sm">Ways Of Thinking</p>
-                                    <p class="text-xs text-slate-500">Conception, Architecture, Design patterns, Best
-                                        practices</p>
+                                    <p class="font-bold text-white text-sm group-hover:text-purple-400 transition-colors"
+                                        data-i18n="cfp.cat_wot">Ways Of Thinking</p>
+                                    <p class="text-xs text-slate-500 line-clamp-1" data-i18n="cfp.cat_wot_desc">
+                                        Conception, Architecture, Design patterns, Best practices</p>
                                 </div>
                             </div>
                             <div
-                                class="glass-panel px-5 py-4 rounded-xl border-white/5 hover:border-amber-500/20 transition-colors flex items-center gap-3">
-                                <span class="text-2xl">👨🏻‍💻</span>
+                                class="glass-panel px-5 py-4 rounded-xl border-white/5 hover:border-amber-500/20 transition-all duration-300 flex items-center gap-4 group hover:bg-white/5">
+                                <div
+                                    class="w-10 h-10 shrink-0 rounded-lg bg-amber-500/10 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+                                    👨🏻‍💻</div>
                                 <div>
-                                    <p class="font-bold text-white text-sm">Backend</p>
-                                    <p class="text-xs text-slate-500">Java, Spring, NodeJS…</p>
+                                    <p class="font-bold text-white text-sm group-hover:text-amber-400 transition-colors"
+                                        data-i18n="cfp.cat_backend">Backend</p>
+                                    <p class="text-xs text-slate-500 line-clamp-1" data-i18n="cfp.cat_backend_desc">
+                                        Java, Spring, NodeJS…</p>
                                 </div>
                             </div>
                             <div
-                                class="glass-panel px-5 py-4 rounded-xl border-white/5 hover:border-brand-primary/20 transition-colors flex items-center gap-3">
-                                <span class="text-2xl">🌱</span>
+                                class="glass-panel px-5 py-4 rounded-xl border-white/5 hover:border-brand-primary/20 transition-all duration-300 flex items-center gap-4 group hover:bg-white/5">
+                                <div
+                                    class="w-10 h-10 shrink-0 rounded-lg bg-brand-primary-20 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+                                    🌱</div>
                                 <div>
-                                    <p class="font-bold text-white text-sm">Sustainable Technologies</p>
-                                    <p class="text-xs text-slate-500">GreenIT, Accessibility</p>
+                                    <p class="font-bold text-white text-sm group-hover:text-brand-primary transition-colors"
+                                        data-i18n="cfp.cat_sustainable">Sustainable Technologies</p>
+                                    <p class="text-xs text-slate-500 line-clamp-1" data-i18n="cfp.cat_sustainable_desc">
+                                        GreenIT, Accessibility</p>
                                 </div>
                             </div>
                             <div
-                                class="glass-panel px-5 py-4 rounded-xl border-white/5 hover:border-sky-500/20 transition-colors flex items-center gap-3">
-                                <span class="text-2xl">☁️</span>
+                                class="glass-panel px-5 py-4 rounded-xl border-white/5 hover:border-sky-500/20 transition-all duration-300 flex items-center gap-4 group hover:bg-white/5">
+                                <div
+                                    class="w-10 h-10 shrink-0 rounded-lg bg-sky-500/10 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+                                    ☁️</div>
                                 <div>
-                                    <p class="font-bold text-white text-sm">Cloud & DevSecOps</p>
-                                    <p class="text-xs text-slate-500">GCP, Firebase, Azure, AWS, CI-CD…</p>
+                                    <p class="font-bold text-white text-sm group-hover:text-sky-400 transition-colors"
+                                        data-i18n="cfp.cat_cloud">Cloud & DevSecOps</p>
+                                    <p class="text-xs text-slate-500 line-clamp-1" data-i18n="cfp.cat_cloud_desc">GCP,
+                                        Firebase, Azure, AWS, CI-CD…</p>
                                 </div>
                             </div>
                             <div
-                                class="glass-panel px-5 py-4 rounded-xl border-white/5 hover:border-pink-500/20 transition-colors flex items-center gap-3">
-                                <span class="text-2xl">📱</span>
+                                class="glass-panel px-5 py-4 rounded-xl border-white/5 hover:border-pink-500/20 transition-all duration-300 flex items-center gap-4 group hover:bg-white/5">
+                                <div
+                                    class="w-10 h-10 shrink-0 rounded-lg bg-pink-500/10 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+                                    📱</div>
                                 <div>
-                                    <p class="font-bold text-white text-sm">Mobile</p>
-                                    <p class="text-xs text-slate-500">Android, Flutter, iOS, React Native, etc...</p>
+                                    <p class="font-bold text-white text-sm group-hover:text-pink-400 transition-colors"
+                                        data-i18n="cfp.cat_mobile">Mobile</p>
+                                    <p class="text-xs text-slate-500 line-clamp-1" data-i18n="cfp.cat_mobile_desc">
+                                        Android, Flutter, iOS, React Native, etc...</p>
                                 </div>
                             </div>
                             <div
-                                class="glass-panel px-5 py-4 rounded-xl border-white/5 hover:border-orange-500/20 transition-colors flex items-center gap-3">
-                                <span class="text-2xl">🤖</span>
+                                class="glass-panel px-5 py-4 rounded-xl border-white/5 hover:border-orange-500/20 transition-all duration-300 flex items-center gap-4 group hover:bg-white/5">
+                                <div
+                                    class="w-10 h-10 shrink-0 rounded-lg bg-orange-500/10 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+                                    🤖</div>
                                 <div>
-                                    <p class="font-bold text-white text-sm">Data & AI</p>
-                                    <p class="text-xs text-slate-500">LLM, Pytorch, LangChain, Vertex AI, ...</p>
+                                    <p class="font-bold text-white text-sm group-hover:text-orange-400 transition-colors"
+                                        data-i18n="cfp.cat_data">Data & AI</p>
+                                    <p class="text-xs text-slate-500 line-clamp-1" data-i18n="cfp.cat_data_desc">LLM,
+                                        Pytorch, LangChain, Vertex AI, ...</p>
                                 </div>
                             </div>
                         </div>
@@ -651,22 +700,29 @@
                             <h3 class="text-2xl font-black tier-silver">SILVER</h3>
                             <span class="text-xl font-bold tier-silver">3 000 €</span>
                         </div>
-                        <p class="text-sm text-slate-400 mb-6">5 lots dispos</p>
+                        <p class="text-sm text-slate-400 mb-6" data-i18n="sponsoring.silver_slots">5 lots dispos</p>
                         <ul class="space-y-4 text-sm font-medium">
                             <li class="flex items-center gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-primary shrink-0"></i> Remerciements (Site, Affiches)</li>
+                                    class="w-5 h-5 text-brand-primary shrink-0"></i> <span
+                                    data-i18n="sponsoring.silver_b1">Remerciements (Site, Affiches)</span></li>
                             <li class="flex items-center gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-primary shrink-0"></i> Post dédié sur LinkedIn et X</li>
+                                    class="w-5 h-5 text-brand-primary shrink-0"></i> <span
+                                    data-i18n="sponsoring.silver_b2">Post dédié sur LinkedIn et X</span></li>
                             <li class="flex items-center gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-primary shrink-0"></i> 4 Billets d'entrée</li>
+                                    class="w-5 h-5 text-brand-primary shrink-0"></i> <span
+                                    data-i18n="sponsoring.silver_b3">4 Billets d'entrée</span></li>
                             <li class="flex items-center gap-3 text-slate-500"><i data-lucide="minus"
-                                    class="w-5 h-5 shrink-0"></i> Logo T-shirts / Badges</li>
+                                    class="w-5 h-5 shrink-0"></i> <span data-i18n="sponsoring.gold_b2">Logo T-shirts /
+                                    Badges</span></li>
                             <li class="flex items-center gap-3 text-slate-500"><i data-lucide="minus"
-                                    class="w-5 h-5 shrink-0"></i> Table Exposant</li>
+                                    class="w-5 h-5 shrink-0"></i> <span data-i18n="sponsoring.gold_b3">Table
+                                    Exposant</span></li>
                             <li class="flex items-center gap-3 text-slate-500"><i data-lucide="minus"
-                                    class="w-5 h-5 shrink-0"></i> Dîner VIP</li>
+                                    class="w-5 h-5 shrink-0"></i> <span data-i18n="sponsoring.addon_dinner_title">Dîner
+                                    VIP</span></li>
                             <li class="flex items-center gap-3 text-slate-500"><i data-lucide="minus"
-                                    class="w-5 h-5 shrink-0"></i> Vidéo présentation</li>
+                                    class="w-5 h-5 shrink-0"></i> <span data-i18n="sponsoring.gold_b6">Vidéo
+                                    présentation</span></li>
                         </ul>
                     </div>
                     <!-- Gold -->
@@ -675,50 +731,64 @@
                             <h3 class="text-2xl font-black tier-gold">GOLD</h3>
                             <span class="text-xl font-bold tier-gold">5 000 €</span>
                         </div>
-                        <p class="text-sm text-slate-400 mb-6">3 lots dispos</p>
+                        <p class="text-sm text-slate-400 mb-6" data-i18n="sponsoring.gold_slots">3 lots dispos</p>
                         <ul class="space-y-4 text-sm font-medium">
                             <li class="flex items-center gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-primary shrink-0"></i> Tous avantages Marketing</li>
+                                    class="w-5 h-5 text-brand-primary shrink-0"></i> <span
+                                    data-i18n="sponsoring.gold_b1">Tous avantages Marketing</span></li>
                             <li class="flex items-center gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-primary shrink-0"></i> Logo sur T-shirts / Badges</li>
+                                    class="w-5 h-5 text-brand-primary shrink-0"></i> <span
+                                    data-i18n="sponsoring.gold_b2">Logo sur T-shirts / Badges</span></li>
                             <li class="flex items-center gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-primary shrink-0"></i> Stand basique</li>
+                                    class="w-5 h-5 text-brand-primary shrink-0"></i> <span
+                                    data-i18n="sponsoring.gold_b3">Stand basique</span></li>
                             <li class="flex items-center gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-primary shrink-0"></i> 6 Billets d'entrée</li>
+                                    class="w-5 h-5 text-brand-primary shrink-0"></i> <span
+                                    data-i18n="sponsoring.gold_b4">6 Billets d'entrée</span></li>
                             <li class="flex items-center gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-primary shrink-0"></i> Dîner (2 places)</li>
+                                    class="w-5 h-5 text-brand-primary shrink-0"></i> <span
+                                    data-i18n="sponsoring.gold_b5">Dîner (2 places)</span></li>
                             <li class="flex items-center gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-primary shrink-0"></i> Vidéo (3 min)</li>
+                                    class="w-5 h-5 text-brand-primary shrink-0"></i> <span
+                                    data-i18n="sponsoring.gold_b6">Vidéo (3 min)</span></li>
                             <li class="flex items-center gap-3 text-slate-500"><i data-lucide="minus"
-                                    class="w-5 h-5 shrink-0"></i> Écran 2m (Networking)</li>
+                                    class="w-5 h-5 shrink-0"></i> <span data-i18n="sponsoring.gold_b7">Écran 2m
+                                    (Networking)</span></li>
                         </ul>
                     </div>
                     <!-- Premium -->
                     <div class="glass-panel rounded-3xl p-6 bg-white/5 relative border-t-4 border-purple-400">
-                        <div
-                            class="absolute -top-3 right-6 bg-purple-400 text-black text-[10px] font-black uppercase px-3 py-1 rounded-full">
+                        <div class="absolute -top-3 right-6 bg-purple-400 text-black text-[10px] font-black uppercase px-3 py-1 rounded-full"
+                            data-i18n="sponsoring.premium_limited">
                             Limité à 1</div>
                         <div class="flex justify-between items-center mb-4 pt-2">
                             <h3 class="text-2xl font-black tier-premium">PREMIUM</h3>
                             <span class="text-xl font-bold text-white">8 000 €</span>
                         </div>
-                        <p class="text-sm text-slate-400 mb-6">1 lot dispo</p>
+                        <p class="text-sm text-slate-400 mb-6" data-i18n="sponsoring.premium_slots">1 lot dispo</p>
                         <ul class="space-y-4 text-sm font-medium">
                             <li class="flex items-center gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-primary shrink-0"></i> Tous avantages Marketing & Logo
+                                    class="w-5 h-5 text-brand-primary shrink-0"></i> <span
+                                    data-i18n="sponsoring.premium_b1">Tous avantages Marketing & Logo</span>
                             </li>
                             <li class="flex items-center gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-primary shrink-0"></i> Stand 8m²*</li>
+                                    class="w-5 h-5 text-brand-primary shrink-0"></i> <span
+                                    data-i18n="sponsoring.premium_b2">Stand 8m²*</span></li>
                             <li class="flex items-center gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-primary shrink-0"></i> 8 Billets d'entrée</li>
+                                    class="w-5 h-5 text-brand-primary shrink-0"></i> <span
+                                    data-i18n="sponsoring.premium_b3">8 Billets d'entrée</span></li>
                             <li class="flex items-center gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-primary shrink-0"></i> Dîner (3 places)</li>
+                                    class="w-5 h-5 text-brand-primary shrink-0"></i> <span
+                                    data-i18n="sponsoring.premium_b4">Dîner (3 places)</span></li>
                             <li class="flex items-center gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-primary shrink-0"></i> Keynote exclusive</li>
+                                    class="w-5 h-5 text-brand-primary shrink-0"></i> <span
+                                    data-i18n="sponsoring.premium_b5">Keynote exclusive</span></li>
                             <li class="flex items-center gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-primary shrink-0"></i> Écran 2m (Networking)*</li>
+                                    class="w-5 h-5 text-brand-primary shrink-0"></i> <span
+                                    data-i18n="sponsoring.premium_b6">Écran 2m (Networking)*</span></li>
                             <li class="flex items-center gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-primary shrink-0"></i> Interview vidéo sur LinkedIn</li>
+                                    class="w-5 h-5 text-brand-primary shrink-0"></i> <span
+                                    data-i18n="sponsoring.premium_b7">Interview vidéo sur LinkedIn</span></li>
                         </ul>
                     </div>
                 </div>
@@ -732,51 +802,65 @@
                         <div
                             class="glass-panel p-6 rounded-2xl border-white/5 hover:border-purple-500/30 transition-colors">
                             <div class="flex justify-between items-start mb-4">
-                                <h4 class="text-xl font-bold text-purple-200">Le Dîner VIP</h4>
+                                <h4 class="text-xl font-bold text-purple-200" data-i18n="sponsoring.addon_dinner_title">
+                                    Le Dîner VIP</h4>
                             </div>
-                            <p class="text-sm text-slate-400 mb-4">Remerciements + Talk 10min. Inclus : 2 places dîner +
+                            <p class="text-sm text-slate-400 mb-4" data-i18n="sponsoring.addon_dinner_desc">
+                                Remerciements + Talk 10min. Inclus : 2 places dîner +
                                 2
                                 billets d'entrée conférence.</p>
-                            <p class="text-xs font-bold text-purple-500 uppercase">1 Seul Pack</p>
+                            <p class="text-xs font-bold text-purple-500 uppercase"
+                                data-i18n="sponsoring.addon_dinner_slots">1 Seul Pack</p>
                         </div>
 
                         <div
                             class="glass-panel p-6 rounded-2xl border-white/5 hover:border-brand-primary/30 transition-colors">
                             <div class="flex justify-between items-start mb-4">
-                                <h4 class="text-xl font-bold text-brand-cream">Partner</h4>
+                                <h4 class="text-xl font-bold text-brand-cream"
+                                    data-i18n="sponsoring.addon_partner_title">Partner</h4>
                             </div>
-                            <p class="text-sm text-slate-400 mb-4">Partenaire digital/food. (Ou prestation équiv.).
+                            <p class="text-sm text-slate-400 mb-4" data-i18n="sponsoring.addon_partner_desc">Partenaire
+                                digital/food. (Ou prestation équiv.).
                                 Inclus :
                                 Remerciements web/affiches + 2 billets.</p>
-                            <p class="text-xs font-bold text-brand-primary uppercase">6 Packs Dispos</p>
+                            <p class="text-xs font-bold text-brand-primary uppercase"
+                                data-i18n="sponsoring.addon_partner_slots">6 Packs Dispos</p>
                         </div>
 
                         <div
                             class="glass-panel p-6 rounded-2xl border-white/5 hover:border-brand-teal/30 transition-colors">
                             <div class="flex justify-between items-start mb-4">
-                                <h4 class="text-xl font-bold">Privatisation Salle</h4>
+                                <h4 class="text-xl font-bold" data-i18n="sponsoring.addon_privatization_title">
+                                    Privatisation Salle</h4>
                             </div>
-                            <p class="text-sm text-slate-400 mb-4">Une demi-journée pour démos/codelabs (4 slots)*.</p>
-                            <p class="text-xs font-bold text-slate-500 uppercase">Only Gold & Premium</p>
+                            <p class="text-sm text-slate-400 mb-4" data-i18n="sponsoring.addon_privatization_desc">Une
+                                demi-journée pour démos/codelabs (4 slots)*.</p>
+                            <p class="text-xs font-bold text-slate-500 uppercase"
+                                data-i18n="sponsoring.addon_privatization_slots">Only Gold & Premium</p>
                         </div>
 
                         <div
                             class="glass-panel p-6 rounded-2xl border-white/5 hover:border-brand-teal/30 transition-colors">
                             <div class="flex justify-between items-start mb-4">
-                                <h4 class="text-xl font-bold">Stand Supplémentaire</h4>
+                                <h4 class="text-xl font-bold" data-i18n="sponsoring.addon_stand_title">Stand
+                                    Supplémentaire</h4>
                             </div>
-                            <p class="text-sm text-slate-400 mb-4">Deuxième stand au niveau 2* (2-3 packs max).</p>
-                            <p class="text-xs font-bold text-slate-500 uppercase">All Sponsors</p>
+                            <p class="text-sm text-slate-400 mb-4" data-i18n="sponsoring.addon_stand_desc">Deuxième
+                                stand au niveau 2* (2-3 packs max).</p>
+                            <p class="text-xs font-bold text-slate-500 uppercase"
+                                data-i18n="sponsoring.addon_stand_slots">All Sponsors</p>
                         </div>
 
                         <div
                             class="glass-panel p-6 rounded-2xl border-white/5 hover:border-brand-teal/30 transition-colors">
                             <div class="flex justify-between items-start mb-4">
-                                <h4 class="text-xl font-bold">Intro Talk</h4>
+                                <h4 class="text-xl font-bold" data-i18n="sponsoring.addon_intro_title">Intro Talk</h4>
                             </div>
-                            <p class="text-sm text-slate-400 mb-4">5 minutes juste avant la conférence de votre choix.
+                            <p class="text-sm text-slate-400 mb-4" data-i18n="sponsoring.addon_intro_desc">5 minutes
+                                juste avant la conférence de votre choix.
                             </p>
-                            <p class="text-xs font-bold text-slate-500 uppercase">Visibilité Ciblée</p>
+                            <p class="text-xs font-bold text-slate-500 uppercase"
+                                data-i18n="sponsoring.addon_intro_slots">Visibilité Ciblée</p>
                         </div>
                     </div>
                 </div>
@@ -833,41 +917,63 @@
                         édition.</p>
                 </div>
 
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Speaker Placeholders -->
-                    <div class="glass-panel p-6 rounded-3xl border-white/5 text-center group cursor-pointer">
+                    <div
+                        class="glass-panel p-8 rounded-[2.5rem] border-white/5 text-center group cursor-pointer hover:border-amber-500/30 transition-all duration-500 relative overflow-hidden">
                         <div
-                            class="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden border-2 border-amber-500/30 group-hover:border-amber-500 transition-colors">
-                            <img src="https://ui-avatars.com/api/?name=Speaker+1&background=random" alt="Speaker 1"
-                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all">
+                            class="absolute inset-0 bg-gradient-to-b from-amber-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-2">Coming Soon</h3>
-                        <p class="text-amber-400 text-sm font-medium mb-4">Expert Cloud & AI</p>
-                        <p class="text-slate-400 text-xs">Le nom des premiers speakers sera dévoilé très prochainement.
-                            Restez à l'écoute !</p>
+                        <div
+                            class="w-36 h-36 rounded-full mx-auto mb-6 p-1 bg-gradient-to-tr from-amber-500/40 via-transparent to-amber-500/40 group-hover:rotate-12 transition-transform duration-700">
+                            <div class="w-full h-full rounded-full overflow-hidden border-2 border-white/10">
+                                <img src="https://ui-avatars.com/api/?name=Speaker+1&background=1a1209&color=C8943E&bold=true"
+                                    alt="Speaker 1"
+                                    class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2" data-i18n="speakers.placeholder_name">Coming Soon
+                        </h3>
+                        <p class="text-amber-400 text-sm font-black uppercase tracking-widest mb-4"
+                            data-i18n="speakers.placeholder_desc1">Expert Cloud & AI</p>
+                        <p class="text-slate-400 text-sm leading-relaxed" data-i18n="speakers.placeholder_desc2">Le nom
+                            des premiers speakers sera dévoilé très prochainement. Restez à l'écoute !</p>
                     </div>
 
-                    <div class="glass-panel p-6 rounded-3xl border-white/5 text-center group cursor-pointer">
+                    <div
+                        class="glass-panel p-8 rounded-[2.5rem] border-white/5 text-center group cursor-pointer hover:border-brand-red/30 transition-all duration-500 relative overflow-hidden">
                         <div
-                            class="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden border-2 border-brand-red/30 group-hover:border-brand-red transition-colors">
-                            <img src="https://ui-avatars.com/api/?name=Speaker+2&background=random" alt="Speaker 2"
-                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all">
+                            class="absolute inset-0 bg-gradient-to-b from-brand-red/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-2">Coming Soon</h3>
-                        <p class="text-brand-red text-sm font-medium mb-4">Frontend Wizard</p>
-                        <p class="text-slate-400 text-xs">Un leader de la communauté web nous rejoindra pour une session
-                            exceptionnelle.</p>
+                        <div
+                            class="w-36 h-36 rounded-full mx-auto mb-6 p-1 bg-gradient-to-tr from-brand-red/40 via-transparent to-brand-red/40 group-hover:-rotate-12 transition-transform duration-700">
+                            <div class="w-full h-full rounded-full overflow-hidden border-2 border-white/10">
+                                <img src="https://ui-avatars.com/api/?name=Speaker+2&background=1a1209&color=A0522D&bold=true"
+                                    alt="Speaker 2"
+                                    class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2" data-i18n="speakers.placeholder_name">Coming Soon
+                        </h3>
+                        <p class="text-brand-red text-sm font-black uppercase tracking-widest mb-4"
+                            data-i18n="speakers.placeholder_desc3">Frontend Wizard</p>
+                        <p class="text-slate-400 text-sm leading-relaxed" data-i18n="speakers.placeholder_desc4">Un
+                            leader de la communauté web nous rejoindra pour une session exceptionnelle.</p>
                     </div>
 
-                    <div class="glass-panel p-6 rounded-3xl border-white/5 text-center group cursor-pointer opacity-50">
+                    <div
+                        class="glass-panel p-8 rounded-[2.5rem] border-white/10 border-dashed text-center group cursor-pointer hover:bg-white/5 transition-all duration-500 opacity-80">
                         <div
-                            class="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden border-2 border-slate-500/30 flex items-center justify-center bg-slate-900">
-                            <i data-lucide="user" class="w-12 h-12 text-slate-700"></i>
+                            class="w-36 h-36 rounded-full mx-auto mb-6 flex items-center justify-center bg-slate-900 border-2 border-dashed border-slate-700 group-hover:border-amber-400/50 group-hover:scale-105 transition-all">
+                            <i data-lucide="user-plus"
+                                class="w-12 h-12 text-slate-700 group-hover:text-amber-400 transition-colors"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-slate-500 mb-2">Vous ?</h3>
-                        <p class="text-slate-600 text-sm font-medium mb-4">Submit your talk!</p>
-                        <a href="https://conference-hall.io/devfest-paris-2026" target="_blank"
-                            class="text-amber-400 text-xs font-bold hover:underline">Accéder au CFP</a>
+                        <h3 class="text-2xl font-bold text-slate-400 mb-2" data-i18n="speakers.you_title">Vous ?</h3>
+                        <p class="text-slate-500 text-sm font-medium mb-6" data-i18n="speakers.you_desc">Submit your
+                            talk!</p>
+                        <a href="javascript:void(0)" onclick="scrollToSection('cfp')"
+                            class="inline-block bg-amber-500/10 text-amber-400 px-6 py-2 rounded-full text-xs font-black uppercase tracking-tighter hover:bg-amber-500 hover:text-black transition-all"
+                            data-i18n="speakers.you_cta">Accéder au CFP</a>
                     </div>
                 </div>
             </div>
@@ -879,11 +985,13 @@
             <div class="max-w-7xl mx-auto">
                 <div class="grid lg:grid-cols-2 gap-16 items-center">
                     <div>
-                        <h3 class="text-3xl font-display font-black mb-8">Profil des Participants</h3>
+                        <h3 class="text-3xl font-display font-black mb-8" data-i18n="sponsoring.profile_title">Profil
+                            des Participants</h3>
                         <div class="space-y-6">
                             <div class="glass-panel p-6 rounded-2xl border-white/5">
                                 <div class="flex justify-between items-center mb-2">
-                                    <span class="font-bold text-white">Développeurs & Engineers</span>
+                                    <span class="font-bold text-white" data-i18n="sponsoring.profile_dev">Développeurs &
+                                        Engineers</span>
                                     <span class="text-amber-400 font-black">65%</span>
                                 </div>
                                 <div class="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
@@ -892,7 +1000,8 @@
                             </div>
                             <div class="glass-panel p-6 rounded-2xl border-white/5">
                                 <div class="flex justify-between items-center mb-2">
-                                    <span class="font-bold text-white">Étudiants & Juniors</span>
+                                    <span class="font-bold text-white" data-i18n="sponsoring.profile_students">Étudiants
+                                        & Juniors</span>
                                     <span class="text-brand-red font-black">15%</span>
                                 </div>
                                 <div class="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
@@ -901,11 +1010,12 @@
                             </div>
                             <div class="glass-panel p-6 rounded-2xl border-white/5">
                                 <div class="flex justify-between items-center mb-2">
-                                    <span class="font-bold text-white">CEOs, CTOs & Managers</span>
-                                    <span class="text-brand-teal font-black">10%</span>
+                                    <span class="font-bold text-white" data-i18n="sponsoring.profile_execs">CEOs, CTOs &
+                                        Managers</span>
+                                    <span class="text-brand-teal font-black">15%</span>
                                 </div>
                                 <div class="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
-                                    <div class="h-full bg-brand-teal w-[10%]"></div>
+                                    <div class="h-full bg-brand-teal w-[15%]"></div>
                                 </div>
                             </div>
                         </div>
@@ -914,7 +1024,8 @@
                     <div class="glass-panel p-10 rounded-[2.5rem] border-white/10 relative overflow-hidden">
                         <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-amber-500/10 blur-3xl rounded-full">
                         </div>
-                        <h3 class="text-3xl font-display font-black mb-8">Dates Clés</h3>
+                        <h3 class="text-3xl font-display font-black mb-8" data-i18n="sponsoring.dates_title">Dates Clés
+                        </h3>
                         <div class="space-y-8 relative">
                             <div class="absolute left-3 top-2 bottom-2 w-0.5 bg-white/5"></div>
 
@@ -924,7 +1035,8 @@
                                     <div class="w-2 h-2 rounded-full bg-amber-500"></div>
                                 </div>
                                 <p class="text-xs font-black text-amber-500 uppercase mb-1">04 Mai 2026</p>
-                                <h4 class="font-bold text-white">Lancement des packs Sponsoring</h4>
+                                <h4 class="font-bold text-white" data-i18n="sponsoring.dates_packs">Lancement des packs
+                                    Sponsoring</h4>
                             </div>
 
                             <div class="relative pl-10">
@@ -933,7 +1045,8 @@
                                     <div class="w-2 h-2 rounded-full bg-white/30"></div>
                                 </div>
                                 <p class="text-xs font-black text-slate-500 uppercase mb-1">25 Mai 2026</p>
-                                <h4 class="font-bold text-white">Ouverture de la billetterie</h4>
+                                <h4 class="font-bold text-white" data-i18n="sponsoring.dates_tickets">Ouverture de la
+                                    billetterie</h4>
                             </div>
 
                             <div class="relative pl-10">
@@ -942,7 +1055,8 @@
                                     <div class="w-2 h-2 rounded-full bg-brand-red"></div>
                                 </div>
                                 <p class="text-xs font-black text-brand-red uppercase mb-1">30 Sept. 2026</p>
-                                <h4 class="font-bold text-white">Clôture du Sponsoring</h4>
+                                <h4 class="font-bold text-white" data-i18n="sponsoring.dates_cloture">Clôture du
+                                    Sponsoring</h4>
                             </div>
 
                             <div class="relative pl-10">
@@ -951,7 +1065,8 @@
                                     <div class="w-2 h-2 rounded-full bg-brand-teal"></div>
                                 </div>
                                 <p class="text-xs font-black text-brand-teal uppercase mb-1">27 Nov. 2026</p>
-                                <h4 class="font-bold text-white">Jour J – DevFest Paris</h4>
+                                <h4 class="font-bold text-white" data-i18n="sponsoring.dates_event">Jour J – DevFest
+                                    Paris</h4>
                             </div>
                         </div>
                     </div>
@@ -959,8 +1074,7 @@
             </div>
         </section>
 
-        <section data-route="home" id="team"
-            class="py-20 px-6 relative z-10 glass-panel border-y border-white/5">
+        <section data-route="home" id="team" class="py-20 px-6 relative z-10 glass-panel border-y border-white/5">
             <div class="max-w-7xl mx-auto">
                 <h2 class="text-4xl font-display font-black mb-12 text-center" data-i18n="team.title">Meet the New Team
                 </h2>
@@ -976,7 +1090,8 @@
                                 class="absolute -top-1 -right-1 w-4 h-4 bg-brand-primary rounded-full border-2 border-black animate-pulse"></span>
                         </div>
                         <p class="font-bold text-sm text-white">Jihène Mejri</p>
-                        <p class="text-xs text-slate-400 mt-1">DevFest Manager & Coordinator</p>
+                        <p class="text-xs text-slate-400 mt-1" data-i18n="team.role_manager">DevFest Manager &
+                            Coordinator</p>
                     </div>
 
                     <!-- Houssem Mahmoud -->
@@ -987,7 +1102,7 @@
                                 class="w-full h-full object-cover">
                         </div>
                         <p class="font-bold text-sm text-white">Houssem Mahmoud</p>
-                        <p class="text-xs text-slate-400 mt-1">Sponsoring Lead</p>
+                        <p class="text-xs text-slate-400 mt-1" data-i18n="team.role_sponsoring">Sponsoring Lead</p>
                     </div>
 
                     <!-- Abdul Attal -->
@@ -997,7 +1112,8 @@
                             <img src="images/team/abdul_attal.png" alt="Abdul Attal" class="w-full h-full object-cover">
                         </div>
                         <p class="font-bold text-sm text-white">Abdul Attal</p>
-                        <p class="text-xs text-slate-400 mt-1">Relations Communauté & Bénévoles</p>
+                        <p class="text-xs text-slate-400 mt-1" data-i18n="team.role_community">Relations Communauté &
+                            Bénévoles</p>
                     </div>
 
                     <!-- Chrys Le Gall -->
@@ -1008,7 +1124,8 @@
                                 class="w-full h-full object-cover">
                         </div>
                         <p class="font-bold text-sm text-white">Chrys Le Gall</p>
-                        <p class="text-xs text-slate-400 mt-1">CFP & Relations Speakers</p>
+                        <p class="text-xs text-slate-400 mt-1" data-i18n="team.role_speakers">CFP & Relations Speakers
+                        </p>
                     </div>
 
                     <!-- Edouard Marquez -->
@@ -1019,7 +1136,8 @@
                                 class="w-full h-full object-cover">
                         </div>
                         <p class="font-bold text-sm text-white">Edouard Marquez</p>
-                        <p class="text-xs text-slate-400 mt-1">Captation & Technical Support</p>
+                        <p class="text-xs text-slate-400 mt-1" data-i18n="team.role_technical">Captation & Technical
+                            Support</p>
                     </div>
 
                     <!-- Christina Souaiby -->
@@ -1030,7 +1148,7 @@
                                 class="w-full h-full object-cover">
                         </div>
                         <p class="font-bold text-sm text-white">Christina Souaiby</p>
-                        <p class="text-xs text-slate-400 mt-1">Comm' & Réseaux sociaux</p>
+                        <p class="text-xs text-slate-400 mt-1" data-i18n="team.role_social">Comm' & Réseaux sociaux</p>
                     </div>
 
                     <!-- Jennifer Florentia -->
@@ -1041,7 +1159,7 @@
                                 class="w-full h-full object-cover">
                         </div>
                         <p class="font-bold text-sm text-white">Jennifer Florentia</p>
-                        <p class="text-xs text-slate-400 mt-1">Design & Marketing</p>
+                        <p class="text-xs text-slate-400 mt-1" data-i18n="team.role_design">Design & Marketing</p>
                     </div>
 
                     <!-- Cogni -->
@@ -1053,7 +1171,7 @@
                             </div>
                         </div>
                         <p class="font-bold text-sm text-white">Cogni</p>
-                        <p class="text-xs text-brand-teal mt-1">Assistant IA 🤖</p>
+                        <p class="text-xs text-brand-teal mt-1" data-i18n="team.role_ai">Assistant IA 🤖</p>
                     </div>
 
                 </div>
@@ -1126,22 +1244,28 @@
                     class="absolute right-0 top-0 w-1/2 h-64 bg-amber-600/10 blur-[100px] rounded-full pointer-events-none">
                 </div>
 
-                <h1 class="text-4xl md:text-5xl font-display font-black mb-12 text-white relative z-10">GDG Event
+                <h1 class="text-4xl md:text-5xl font-display font-black mb-12 text-white relative z-10"
+                    data-i18n="coc.title">GDG Event
                     Participation Terms</h1>
 
                 <div class="space-y-8 text-slate-300 leading-relaxed relative z-10 text-lg">
-                    <p>Welcome to the Google Developer Group program site. Thanks for your interest in participating in
+                    <p data-i18n="coc.p1">Welcome to the Google Developer Group program site. Thanks for your interest
+                        in participating in
                         a local GDG event.</p>
 
-                    <p>Please read these GDG Event Participation terms (the "Terms") carefully because they are the
+                    <p data-i18n="coc.p2">Please read these GDG Event Participation terms (the "Terms") carefully
+                        because they are the
                         agreement between you and Google. By using or logging into gdg.community.dev (the "Site") or
                         participating in any GDG event you confirm that you understand and agree to these Terms.</p>
 
-                    <p>Google may change these Terms from time to time. Revised Terms will be posted to the Site.</p>
+                    <p data-i18n="coc.p3">Google may change these Terms from time to time. Revised Terms will be posted
+                        to the Site.</p>
 
                     <div>
-                        <h2 class="text-2xl font-bold text-white mb-4 mt-12">GDG Community Entities</h2>
-                        <p>Please note that GDG chapters and GDG events are not hosted, organized, or run by Google or
+                        <h2 class="text-2xl font-bold text-white mb-4 mt-12" data-i18n="coc.h1">GDG Community Entities
+                        </h2>
+                        <p data-i18n="coc.p4">Please note that GDG chapters and GDG events are not hosted, organized, or
+                            run by Google or
                             its affiliates. GDG chapters and GDG events are run by independent community organizers who
                             are passionate about Google, our services and products. GDG community organizers are not
                             agents or employees of Google and are not compensated by Google. The views expressed by GDG
@@ -1151,20 +1275,23 @@
                     </div>
 
                     <div>
-                        <h2 class="text-2xl font-bold text-white mb-4 mt-12">Meeting Conduct</h2>
-                        <p class="mb-4">While GDG events have different purposes, all GDG organizers, GDG chapter
+                        <h2 class="text-2xl font-bold text-white mb-4 mt-12" data-i18n="coc.h2">Meeting Conduct</h2>
+                        <p class="mb-4" data-i18n="coc.p5">While GDG events have different purposes, all GDG organizers,
+                            GDG chapter
                             members and attendees should maintain a friendly, safe, supportive and harassment-free
                             environment and follow posted and/or applicable event guidelines, including the global
                             community code of conduct.</p>
-                        <p>Unacceptable behavior will not be tolerated. Anyone engaged in unacceptable behavior may be
+                        <p data-i18n="coc.p6">Unacceptable behavior will not be tolerated. Anyone engaged in
+                            unacceptable behavior may be
                             exited from the GDG(s), Site(s) or resources, including future event participation.
                             Unacceptable behavior may also result in prohibition from registering for or attending
                             future GDG events.</p>
                     </div>
 
                     <div>
-                        <h2 class="text-2xl font-bold text-white mb-4 mt-12">Assumption of Risk</h2>
-                        <p>Your participation in and attendance of a GDG event or any related activities is completely
+                        <h2 class="text-2xl font-bold text-white mb-4 mt-12" data-i18n="coc.h3">Assumption of Risk</h2>
+                        <p data-i18n="coc.p7">Your participation in and attendance of a GDG event or any related
+                            activities is completely
                             voluntary. To the maximum extent permitted under applicable law, you accept and assume all
                             risks of any and all personal injury or damage to your personal property that you may face
                             while attending a GDG event or related activities, and waive any claims against Google
@@ -1172,8 +1299,10 @@
                     </div>
 
                     <div>
-                        <h2 class="text-2xl font-bold text-white mb-4 mt-12">Photo, Video and Other Media</h2>
-                        <p>GDG organizers, members, other GDG event attendees and/or Google may photograph, record (both
+                        <h2 class="text-2xl font-bold text-white mb-4 mt-12" data-i18n="coc.h4">Photo, Video and Other
+                            Media</h2>
+                        <p data-i18n="coc.p8">GDG organizers, members, other GDG event attendees and/or Google may
+                            photograph, record (both
                             audio and video), webcast, podcast during a GDG event. Your image, likeness, voice,
                             statements and other identifying characteristics may be captured and transmitted as a
                             result. By attending and participating in a GDG event where such recording is taking place,
@@ -1182,22 +1311,26 @@
                     </div>
 
                     <div>
-                        <h2 class="text-2xl font-bold text-white mb-4 mt-12">Email Settings</h2>
-                        <p class="mb-4">By joining a GDG event you may receive service-related emails regarding your
+                        <h2 class="text-2xl font-bold text-white mb-4 mt-12" data-i18n="coc.h5">Email Settings</h2>
+                        <p class="mb-4" data-i18n="coc.p9">By joining a GDG event you may receive service-related emails
+                            regarding your
                             participation in the GDG event, the GDG program and related activities from Google.</p>
-                        <p class="mb-4">By joining a GDG event, you may also receive emails from GDG organizers and GDG
+                        <p class="mb-4" data-i18n="coc.p10">By joining a GDG event, you may also receive emails from GDG
+                            organizers and GDG
                             members. Any communications you receive from a GDG organizer or other GDG members are not
                             sent by or on behalf of Google. Instead, they are sent by GDG organizers or GDG members in
                             their individual capacities.</p>
-                        <p>You can unsubscribe from emails sent by a GDG chapter any time by navigating to your GDG
+                        <p data-i18n="coc.p11">You can unsubscribe from emails sent by a GDG chapter any time by
+                            navigating to your GDG
                             Member profile on the Site and adjusting your Updates settings or by using the opt-out
                             mechanism in the footer of the GDG chapter email. If you unsubscribe from GDG chapter emails
                             you may still receive emails for GDG events in which you agree to participate.</p>
                     </div>
 
                     <div>
-                        <h2 class="text-2xl font-bold text-white mb-4 mt-12">Data Processing</h2>
-                        <p>By submitting your data on the Site at gdg.community.dev, you agree to have your event RSVP
+                        <h2 class="text-2xl font-bold text-white mb-4 mt-12" data-i18n="coc.h6">Data Processing</h2>
+                        <p data-i18n="coc.p12">By submitting your data on the Site at gdg.community.dev, you agree to
+                            have your event RSVP
                             information collected by Google to share with local GDG organizers for the purpose of
                             administering each GDG event. Google will use any information that you provide in connection
                             with the GDG program in accordance with <a href="http://www.google.com/policies/privacy/"
@@ -1213,18 +1346,19 @@
         <div class="max-w-7xl mx-auto text-center border-t border-white/10 pt-16">
             <div
                 class="flex flex-wrap justify-center gap-8 mb-12 text-sm font-bold uppercase tracking-widest text-slate-400">
-                <a href="#/" class="hover:text-amber-400 transition-colors" data-i18n="nav.home">À propos</a>
-                <a href="#/sponsoring" class="hover:text-amber-400 transition-colors" data-i18n="nav.sponsoring">Devenir
+                <a href="/" class="hover:text-amber-400 transition-colors" data-i18n="contact.about">À propos</a>
+                <a href="/sponsoring" class="hover:text-amber-400 transition-colors" data-i18n="nav.sponsoring">Devenir
                     sponsor</a>
-                <a href="#/" class="hover:text-amber-400 transition-colors" data-i18n="nav.cfp">Appel à conférences</a>
-                <a href="#/coc" class="hover:text-amber-400 transition-colors" data-i18n="contact.coc">Code de
+                <a href="javascript:void(0)" onclick="scrollToSection('cfp')"
+                    class="hover:text-amber-400 transition-colors" data-i18n="nav.cfp">Appel à conférences</a>
+                <a href="/coc" class="hover:text-amber-400 transition-colors" data-i18n="contact.coc">Code de
                     conduite</a>
             </div>
 
             <h2 class="text-4xl font-display font-black mb-6" data-i18n="contact.title">Contactez-nous</h2>
             <p class="text-xl text-slate-300 mb-8 max-w-2xl mx-auto" data-i18n="contact.subtitle">Pour toute demande de
                 sponsoring, n'hésitez pas à
-                joindre notre coordinatrice.</p>
+                joindre notre équipe.</p>
 
             <div class="flex flex-col md:flex-row items-center justify-center gap-6 mb-16">
                 <a href="mailto:contact@gdgparis.com"
@@ -1262,16 +1396,53 @@
     <!-- i18n Scripts -->
     <script src="translations/fr.js"></script>
     <script src="translations/en.js"></script>
+    <script>
+        (function () {
+            // Wait for both scripts (they are static tags now, so they load in order)
+            // But to be safe and compatible with the initApp flow:
+            window.addEventListener('DOMContentLoaded', () => {
+                console.log('DOM Loaded, booting app...');
+                if (window.initApp) window.initApp();
+            });
+        })();
+    </script>
 
     <!-- Router & i18n Engine -->
     <script>
-        const LANGS = { fr: { flag: '\uD83C\uDDEB\uD83C\uDDF7', label: 'FR' }, en: { flag: '\uD83C\uDDEC\uD83C\uDDE7', label: 'EN' } };
+        const LANGS = { fr: { flag: '🇫🇷', label: 'FR' }, en: { flag: '🇬🇧', label: 'EN' } };
         let currentLang = localStorage.getItem('devfest_lang') || 'fr';
 
-        // --- Router ---
+        // --- Router (dual-mode: path on server, hash on file://) ---
+        const IS_FILE = window.location.protocol === 'file:';
+        // Auto-detect base path for subdirectory hosting (like GitHub Pages)
+        const BASE_PATH = !IS_FILE ? window.location.pathname.replace(/\/(index\.html)?$/, '').replace(/\/$/, '') : '';
+
+        function getRoute() {
+            if (IS_FILE) {
+                const hash = window.location.hash || '#/';
+                return hash.split('?')[0].replace('#/', '') || 'home';
+            } else {
+                const fullPath = window.location.pathname;
+                // Remove base path to get the logical route
+                const path = BASE_PATH ? fullPath.replace(BASE_PATH, '') : fullPath;
+                return path.split('?')[0].replace(/^\//, '') || 'home';
+            }
+        }
+
+        function navigate(route) {
+            if (IS_FILE) {
+                window.location.hash = '#/' + (route === 'home' ? '' : route);
+            } else {
+                const href = BASE_PATH + '/' + (route === 'home' ? '' : route);
+                if (window.location.pathname !== href) {
+                    history.pushState(null, '', href);
+                    handleRoute();
+                }
+            }
+        }
+
         function handleRoute() {
-            const hash = window.location.hash || '#/';
-            const route = hash.split('?')[0].replace('#/', '') || 'home';
+            const route = getRoute();
             console.log('Routing to:', route);
 
             document.querySelectorAll('[data-route]').forEach(el => {
@@ -1286,11 +1457,40 @@
             if (window.lucide) lucide.createIcons();
         }
 
-        window.addEventListener('hashchange', handleRoute);
-        // Initial route
-        handleRoute();
+        // Listen for navigation events
+        if (IS_FILE) {
+            window.addEventListener('hashchange', handleRoute);
+        } else {
+            window.addEventListener('popstate', handleRoute);
+        }
 
-        // --- i18n ---
+        // Intercept link clicks — rewrite hrefs for the current mode
+        document.addEventListener('click', e => {
+            const link = e.target.closest('a');
+            if (!link) return;
+            const href = link.getAttribute('href');
+            if (!href) return;
+
+            // Handle /path style links
+            if (href.startsWith('/') && !href.startsWith('//')) {
+                if (link.target === '_blank') return;
+                e.preventDefault();
+                const route = href.replace(/^\//, '') || 'home';
+                navigate(route);
+                return;
+            }
+
+            // Handle legacy #/path style links (just in case)
+            if (href.startsWith('#/')) {
+                if (!IS_FILE) {
+                    e.preventDefault();
+                    const route = href.replace('#/', '') || 'home';
+                    navigate(route);
+                }
+            }
+        });
+
+        // --- i18n Helpers ---
         function flatten(obj, prefix) {
             prefix = prefix || '';
             return Object.entries(obj).reduce(function (acc, entry) {
@@ -1310,8 +1510,10 @@
         }
 
         function updateSwitcher(lang) {
-            document.getElementById('lang-flag').textContent = LANGS[lang].flag;
-            document.getElementById('lang-label').textContent = LANGS[lang].label;
+            const flagEl = document.getElementById('lang-flag');
+            const labelEl = document.getElementById('lang-label');
+            if (flagEl) flagEl.textContent = LANGS[lang].flag;
+            if (labelEl) labelEl.textContent = LANGS[lang].label;
             document.documentElement.lang = lang;
         }
 
@@ -1330,13 +1532,13 @@
         }
 
         function toggleLang() {
-            console.log('Toggle clicked, current:', currentLang);
             setLang(currentLang === 'fr' ? 'en' : 'fr');
         }
 
-        // --- Mobile Menu ---
+        // --- UI & Navigation Helpers ---
         function toggleMenu() {
             const wrapper = document.getElementById('mobile-menu-wrapper');
+            if (!wrapper) return;
             if (wrapper.style.gridTemplateRows === '0fr' || !wrapper.style.gridTemplateRows) {
                 wrapper.style.gridTemplateRows = '1fr';
             } else {
@@ -1344,14 +1546,14 @@
             }
         }
 
-        // --- Navigation Helpers ---
         function scrollToSection(id) {
-            if (window.location.hash !== '#/' && window.location.hash !== '') {
-                window.location.hash = '#/';
+            const currentRoute = getRoute();
+            if (currentRoute !== 'home') {
+                navigate('home');
                 setTimeout(() => {
                     const el = document.getElementById(id);
                     if (el) el.scrollIntoView({ behavior: 'smooth' });
-                }, 150);
+                }, 300);
             } else {
                 const el = document.getElementById(id);
                 if (el) el.scrollIntoView({ behavior: 'smooth' });
@@ -1365,21 +1567,17 @@
         function initCongi() {
             const congi = document.getElementById('congi-robot');
             if (!congi) return;
-
             setInterval(() => {
                 const maxW = window.innerWidth - 150;
                 const maxH = window.innerHeight - 150;
-
                 const randomX = Math.max(0, Math.floor(Math.random() * maxW));
                 const randomY = Math.max(0, Math.floor(Math.random() * maxH));
                 const randomRot = Math.floor(Math.random() * 40) - 20;
-
                 congi.style.transition = 'all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
                 congi.style.left = randomX + 'px';
                 congi.style.top = randomY + 'px';
                 congi.style.transform = `rotate(${randomRot}deg) scale(1)`;
                 congi.style.opacity = '1';
-
                 setTimeout(() => {
                     congi.style.transition = 'all 1s ease-in';
                     congi.style.left = (window.innerWidth + 200) + 'px';
@@ -1390,9 +1588,19 @@
             }, 10000);
         }
 
-        // Boot
-        setLang(currentLang);
-        initCongi();
+        // --- Boot Sequence ---
+        window.initApp = function () {
+            if (!IS_FILE) {
+                const params = new URLSearchParams(window.location.search);
+                const redirectPath = params.get('p');
+                if (redirectPath) {
+                    history.replaceState(null, '', decodeURIComponent(redirectPath) + window.location.hash);
+                }
+            }
+            setLang(currentLang);
+            handleRoute();
+            initCongi();
+        };
     </script>
 </body>
 

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <script>
+    // Capture the current pathname and redirect to index.html with encoded path as query parameter
+    (function() {
+      var path = window.location.pathname;
+      // If the path is just '/' keep it as home
+      var target = '/index.html';
+      if (path && path !== '/' ) {
+        target += '?p=' + encodeURIComponent(path);
+      }
+      // Preserve any hash fragment
+      if (window.location.hash) {
+        target += window.location.hash;
+      }
+      window.location.replace(target);
+    })();
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>
