@@ -31,6 +31,10 @@
     <link rel="icon" type="image/svg+xml" href="images/gdg-logo.svg">
     <link rel="canonical" href="https://devfest.gdgparis.fr/">
 
+    <link rel="alternate" hreflang="fr" href="https://devfest.gdgparis.fr/?lang=fr" />
+    <link rel="alternate" hreflang="en" href="https://devfest.gdgparis.fr/?lang=en" />
+    <link rel="alternate" hreflang="x-default" href="https://devfest.gdgparis.fr/" />
+
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
@@ -1445,6 +1449,20 @@
             const route = getRoute();
             console.log('Routing to:', route);
 
+            // SEO: Update Page Title & Canonical based on route
+            const titles = {
+                'home': 'DevFest Paris 2026 - Conférence Tech GDG Paris',
+                'sponsoring': 'Devenir Sponsor - DevFest Paris 2026',
+                'speakers': 'Speakers - DevFest Paris 2026',
+                'coc': 'Code of Conduct - DevFest Paris 2026'
+            };
+            document.title = titles[route] || titles['home'];
+
+            const canonical = document.querySelector('link[rel="canonical"]');
+            if (canonical) {
+                canonical.setAttribute('href', 'https://devfest.gdgparis.fr/' + (route === 'home' ? '' : route));
+            }
+
             document.querySelectorAll('[data-route]').forEach(el => {
                 const routes = el.getAttribute('data-route').split(',').map(r => r.trim());
                 if (routes.includes(route)) {
@@ -1592,6 +1610,14 @@
         window.initApp = function () {
             if (!IS_FILE) {
                 const params = new URLSearchParams(window.location.search);
+                
+                // Handle language from URL parameter
+                const langParam = params.get('lang');
+                if (langParam && (langParam === 'fr' || langParam === 'en')) {
+                    currentLang = langParam;
+                    localStorage.setItem('devfest_lang', currentLang);
+                }
+
                 const redirectPath = params.get('p');
                 if (redirectPath) {
                     history.replaceState(null, '', decodeURIComponent(redirectPath) + window.location.hash);
