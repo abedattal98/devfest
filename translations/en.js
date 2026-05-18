@@ -14,7 +14,7 @@ window.translations_en = {
   "sponsoring": {
     "packs_title": "Sponsorship Packages",
     "packs_subtitle": "Choose the offer that aligns with your strategic goals.",
-    "dossier": "View Full Dossier",
+    "dossier": "View Full Deck",
     "meeting": "Book a Meeting",
     "addon_title": "Adds-on Sponsorship"
   },
@@ -104,7 +104,7 @@ window.translations_en = {
   "sponsoring": {
     "packs_title": "Sponsorship Packages",
     "packs_subtitle": "Choose the offer that aligns with your strategic goals.",
-    "dossier": "View Full Dossier",
+    "dossier": "View Full Deck",
     "meeting": "Book a Meeting",
     "addon_title": "Adds-on Sponsorship",
     "silver_slots": "5 slots available",
