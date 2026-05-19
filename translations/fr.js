@@ -15,6 +15,7 @@ window.translations_fr = {
     "packs_title": "Packs de Sponsoring",
     "packs_subtitle": "Choisissez l'offre qui correspond à vos objectifs stratégiques.",
     "dossier": "Voir le Dossier Complet",
+    "dossier_link": "files/DevFest Paris - Dossier-Sponsoring 2026.pdf",
     "meeting": "Prendre rendez-vous",
     "addon_title": "Adds-on Sponsorship"
   },
@@ -109,6 +110,7 @@ window.translations_fr = {
     "packs_title": "Packs de Sponsoring",
     "packs_subtitle": "Choisissez l'offre qui correspond à vos objectifs stratégiques.",
     "dossier": "Voir le Dossier Complet",
+    "dossier_link": "files/DevFest Paris - Dossier-Sponsoring 2026.pdf",
     "meeting": "Prendre rendez-vous",
     "addon_title": "Adds-on Sponsorship",
     "silver_slots": "5 lots dispos",

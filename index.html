@@ -684,7 +684,7 @@
                     <p class="text-slate-400 text-lg mb-8" data-i18n="sponsoring.packs_subtitle">Choisissez l'offre qui
                         correspond à vos objectifs stratégiques.</p>
                     <div class="flex flex-wrap gap-4 justify-center">
-                        <a href="https://docs.google.com/presentation/d/1IW1p-YcSxOmvC1R5j5Z2I9k9ZlERFyAbZtP_5qlkkYk/present?slide=id.p1"
+                        <a id="dossier-link" href="files/DevFest Paris - Dossier-Sponsoring 2026.pdf"
                             target="_blank"
                             class="glass-panel px-6 py-3 hover:bg-white/10 rounded-full font-bold transition-all flex items-center gap-2 border border-white/10"><i
                                 data-lucide="presentation" class="w-5 h-5 text-amber-400"></i> <span
@@ -1523,8 +1523,19 @@
         function applyTranslations(flat) {
             document.querySelectorAll('[data-i18n]').forEach(function (el) {
                 var key = el.getAttribute('data-i18n');
-                if (flat[key] !== undefined) { el.textContent = flat[key]; }
+                if (flat[key] !== undefined) {
+                    if (flat[key].indexOf('<') !== -1 && flat[key].indexOf('>') !== -1) {
+                        el.innerHTML = flat[key];
+                    } else {
+                        el.textContent = flat[key];
+                    }
+                }
             });
+
+            const dossierLink = document.getElementById('dossier-link');
+            if (dossierLink && flat['sponsoring.dossier_link'] !== undefined) {
+                dossierLink.setAttribute('href', flat['sponsoring.dossier_link']);
+            }
         }
 
         function updateSwitcher(lang) {

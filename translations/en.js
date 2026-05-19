@@ -15,6 +15,7 @@ window.translations_en = {
     "packs_title": "Sponsorship Packages",
     "packs_subtitle": "Choose the offer that aligns with your strategic goals.",
     "dossier": "View Full Deck",
+    "dossier_link": "files/DevFest Paris - Sponsoring Deck 2026.pdf",
     "meeting": "Book a Meeting",
     "addon_title": "Adds-on Sponsorship"
   },
@@ -105,6 +106,7 @@ window.translations_en = {
     "packs_title": "Sponsorship Packages",
     "packs_subtitle": "Choose the offer that aligns with your strategic goals.",
     "dossier": "View Full Deck",
+    "dossier_link": "files/DevFest Paris - Sponsoring Deck 2026.pdf",
     "meeting": "Book a Meeting",
     "addon_title": "Adds-on Sponsorship",
     "silver_slots": "5 slots available",
