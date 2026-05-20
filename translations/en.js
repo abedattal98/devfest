@@ -132,7 +132,7 @@ window.translations_en = {
     "premium_b6": "Interview video published on LinkedIn",
     "premium_b7": "8 Entrance tickets",
     "premium_b8": "Speakers/Sponsors Dinner (3 places)",
-    "premium_b9": "Intro video before a talk (Keynote)",
+    "premium_b9": "Presentation during the Keynote",
     "benefit_logo": "Logo on T-shirts / Badges / Youtube",
     "benefit_screen": "2m Screen in the Networking Space*",
     "benefit_interview": "Interview video published on LinkedIn",
