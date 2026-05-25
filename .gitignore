@@ -1,0 +1,7 @@
+# Node
+node_modules/
+
+# Generated SEO Folders (built by GitHub Actions)
+/sponsoring/
+/speakers/
+/coc/

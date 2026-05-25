@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+Host: https://devfest.gdgparis.fr
 Sitemap: https://devfest.gdgparis.fr/sitemap.xml
