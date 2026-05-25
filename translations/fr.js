@@ -7,9 +7,10 @@ window.translations_fr = {
     "cfp": "Appel à conférences"
   },
   "ticketing": {
-    "title": "Billetterie (Soon)",
-    "subtitle": "🎟️ Ticket sales — coming soon!",
-    "desc": "Les ventes de billets ouvriront prochainement. Restez connectés !"
+    "title": "Billetterie",
+    "subtitle": "🎟️ Super Early Bird — 49€",
+    "desc": "La billetterie Super Early Bird est officiellement ouverte ! Profitez du tarif exceptionnel à 49€ dès maintenant.",
+    "cta": "Prendre mon billet"
   },
   "sponsoring": {
     "packs_title": "Packs de Sponsoring",

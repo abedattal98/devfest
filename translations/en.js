@@ -7,9 +7,10 @@ window.translations_en = {
     "cfp": "Call for Papers"
   },
   "ticketing": {
-    "title": "Ticketing (Soon)",
-    "subtitle": "🎟️ Ticket sales — coming soon!",
-    "desc": "Ticket sales will open soon. Stay tuned!"
+    "title": "Ticketing",
+    "subtitle": "🎟️ Super Early Bird — €49",
+    "desc": "Super Early Bird ticket sales are now open! Grab your tickets for €49 before prices go up.",
+    "cta": "Get my ticket"
   },
   "sponsoring": {
     "packs_title": "Sponsorship Packages",
